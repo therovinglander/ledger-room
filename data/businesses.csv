@@ -1,0 +1,26 @@
+business_id,business_name,industry,risk_pattern_note
+biz_01,Prairie Fox Group,Legal Services,
+biz_02,Northgate Inc.,Marketing Agency,
+biz_03,Blue Harbor Inc.,Specialty Clinic,Injected pattern: single-customer concentration (~62% selection weight).
+biz_04,Summit Inc.,Food & Beverage,
+biz_05,Ironwood Co.,Legal Services,
+biz_06,Cedar Grove Partners,Food & Beverage,
+biz_07,Lakeside Partners,Consulting,Injected pattern: declining revenue trend (runway/burn-rate test case).
+biz_08,Redstone Inc.,Accounting Practice,
+biz_09,Westfield Partners,Logistics,
+biz_10,Brightside Co.,Legal Services,
+biz_11,Hollow Creek Inc.,Construction Trades,Injected pattern: thin cash buffer timed around payroll dates (overdraft/liquidity test case).
+biz_12,Granite Peak Group,Marketing Agency,
+biz_13,Maple & Co. Partners,Auto Repair,
+biz_14,Harborview LLC,Food & Beverage,
+biz_15,Pine Ridge Group,Auto Repair,
+biz_16,Silverline Group,Retail,
+biz_17,Copper Kettle Co.,Professional Services,
+biz_18,Stonebridge Group,Logistics,Injected pattern: declining revenue trend (runway/burn-rate test case).
+biz_19,Fieldstone Co.,Food & Beverage,
+biz_20,Riverbend Group,Logistics,
+biz_21,Oakmont Partners,Event Planning,
+biz_22,Elm Street LLC,Fitness Studio,Injected pattern: round-number expense cluster from an unverified payee (anomaly test case).
+biz_23,Highmark Inc.,Logistics,
+biz_24,Bayview Inc.,Event Planning,
+biz_25,Trailhead Partners,Marketing Agency,
