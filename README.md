@@ -20,3 +20,6 @@ or needed.
 
 In progress. See `src/` for the deterministic KPI engine; LLM narrative layer
 not yet built.
+
+---
+Lives in the trading-room repo (github.com/therovinglander/trading-room, private). Bots in the build pod see it at `/workspace/ventures/trading-room/ledger-room`. Synthetic data only: no real bank data, broker credentials or live-execution code.
