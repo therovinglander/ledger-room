@@ -1,0 +1,6 @@
+# Ledger Room dependencies
+#
+# requests — skills/edgar.py only, to pull SEC EDGAR XBRL company-facts
+# JSON (data.sec.gov). Not needed for narrate.py's mock backend or either
+# room's synthetic-data path. BSD-3 licensed, widely used, small surface.
+requests>=2.31,<3
