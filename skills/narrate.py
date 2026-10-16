@@ -14,10 +14,12 @@ Two layers of validation around the one model call, mirroring the
    `source_transaction_ids` list. A fact that fails this is a bug in the
    calling room, not something narrate.py should paper over.
 2. **Output validation** (`validate_narrative`) — after the model responds,
-   every number appearing in the narrative text must match a fact's value
-   (within rounding), and every citation token (`[cite:<id>]`) must resolve
-   to an ID actually present in the input facts. Mismatches are flagged,
-   never silently dropped.
+   the narrative is split into claims (the text before each run of
+   `[cite:<id>]` tokens). Every number in a claim must equal (within
+   rounding) the value of a fact whose own source IDs are cited right after
+   it; every citation must be a known ID that belongs to a fact stated in
+   that claim; no number may appear uncited; and every numeric fact must be
+   stated. Any miss makes the result not ok — nothing is best-effort.
 
 Two backends:
 
@@ -39,9 +41,15 @@ from dataclasses import dataclass, field
 from typing import Any, Callable
 
 CITE_RE = re.compile(r"\[cite:([^\]\s]+)\]")
+# A run of one or more adjacent citation tokens closes a "claim": the text
+# since the previous run is what those citations support.
+CITE_RUN_RE = re.compile(r"(?:\s*\[cite:[^\]\s]+\])+")
 # Numbers in narrative text: optional $ and %, optional thousands separators,
-# optional decimal part, optional leading minus.
-NUMBER_RE = re.compile(r"-?\$?\d[\d,]*(?:\.\d+)?%?")
+# optional decimal part, optional leading minus. Digits glued to letters,
+# underscores, dots or hyphens are NOT claims: that skips identifiers and
+# labels such as biz_03, FY2025, 10-K, 3-month, 2025-09-27 and accession
+# numbers like 0000320193-25-000079.
+NUMBER_RE = re.compile(r"(?<![\w.\-])-?\$?\d[\d,]*(?:\.\d+)?%?(?![\w\-]|\.\d)")
 
 
 @dataclass
@@ -81,61 +89,127 @@ def _format_value(value: Any) -> str:
 
 
 def _numbers_in_text(text: str) -> list[str]:
-    return NUMBER_RE.findall(text)
+    return NUMBER_RE.findall(CITE_RE.sub(" ", text))
+
+
+def _token_matches(tok: str, value: Any) -> bool:
+    """True if one number token from the text states `value`.
+
+    Accepts the value written exactly (within 0.015), or correctly rounded
+    to the token's own precision ("4,073" for 4073.44, but never "4,000"),
+    and a 0-1 fraction written as a percent ("39%" for 0.39)."""
+    if not isinstance(value, (int, float)) or isinstance(value, bool):
+        return False
+    cleaned = tok.replace("$", "").replace(",", "").replace("%", "")
+    try:
+        tok_val = float(cleaned)
+    except ValueError:
+        return False
+    decimals = len(cleaned.split(".")[1]) if "." in cleaned else 0
+    v = float(value)
+    candidates = [v]
+    if "%" in tok and abs(v) <= 1:
+        candidates.append(v * 100)
+    for c in candidates:
+        if abs(tok_val - c) < 0.015 or abs(tok_val - round(c, decimals)) < 10 ** -(decimals + 3):
+            return True
+    return False
 
 
 def _value_appears(value: Any, numbers_in_text: list[str]) -> bool:
-    """True if `value` (within rounding) matches some number token found in
-    the narrative text. Strips $, %, and thousands separators before
-    comparing numerically; falls back to exact string match for non-numeric
-    values (e.g. a period string or a flag name)."""
+    """True if `value` matches some number token (see _token_matches)."""
     if value is None:
         return True  # nothing to check
-    if isinstance(value, (int, float)):
-        for tok in numbers_in_text:
-            cleaned = tok.replace("$", "").replace(",", "").replace("%", "")
-            try:
-                tok_val = float(cleaned)
-            except ValueError:
-                continue
-            # Percent-formatted values: KPIs often store a 0-1 fraction but
-            # the narrative renders it as e.g. "39%" — accept either scale.
-            if abs(tok_val - float(value)) < 0.015:
-                return True
-            if "%" in tok and abs(tok_val - float(value) * 100) < 0.5:
-                return True
-        return False
-    # Non-numeric value: require the exact string to appear somewhere.
-    return str(value) in numbers_in_text or False
+    return any(_token_matches(tok, value) for tok in numbers_in_text)
 
 
-def validate_narrative(narrative: str, facts: list[Fact]) -> dict:
-    """Checks a model-produced narrative against the input facts:
+def _claims(narrative: str) -> tuple[list[tuple[str, list[str]]], str]:
+    """Split a narrative into (claim_text, cited_ids) pairs, one per run of
+    citation tokens, plus any trailing text after the last run (which, by
+    construction, has no citation)."""
+    claims = []
+    pos = 0
+    for m in CITE_RUN_RE.finditer(narrative):
+        claims.append((narrative[pos:m.start()], CITE_RE.findall(m.group(0))))
+        pos = m.end()
+    return claims, narrative[pos:]
 
-    - every citation token [cite:<id>] must resolve to a known source ID
-    - every numeric fact's value should be traceable to some number in the
-      text (best-effort — a narrative may legitimately omit a fact, that's
-      not itself a violation; what IS a violation is a citation to an
-      unknown ID, which would mean the model invented a source).
 
-    Returns {"ok": bool, "unknown_citations": [...], "cited_ids": [...]}.
+def validate_narrative(narrative: str, facts: list[Fact], require_full_coverage: bool = True) -> dict:
+    """Re-derives every claim in a model-produced narrative from the input
+    facts. Nothing is trusted from the model; each check is a hard failure:
+
+    1. unknown_citations: a [cite:<id>] that no input fact carries (an
+       invented source).
+    2. uncited_numbers: a number in the text with no citation run after it.
+    3. unsupported_numbers: a cited number that matches no fact whose own
+       source IDs are among the citations right after it (an invented value,
+       or a real value pinned to the wrong fact's sources).
+    4. misattributed_citations: a citation attached to a claim whose numbers
+       don't come from a fact that carries that ID (a real source cited for
+       the wrong fact).
+    Fact labels and notes quoted verbatim are code-authored text, so digits
+    inside them are skipped; any other number is checked.
+
+    5. uncovered_facts: a numeric fact the narrative never states with its
+       own citation (when require_full_coverage, the default). This is also
+       what makes an empty or number-free narrative fail.
+
+    Returns {"ok": bool, <each list above>, "cited_ids": [...], "numbers_found": [...]}.
     """
     known_ids = {tid for f in facts for tid in f.source_transaction_ids}
-    cited = CITE_RE.findall(narrative)
-    unknown = sorted({c for c in cited if c not in known_ids})
-    numbers_in_text = _numbers_in_text(narrative)
+    numeric_facts = [f for f in facts
+                     if isinstance(f.value, (int, float)) and not isinstance(f.value, bool)
+                     and f.source_transaction_ids]
 
-    untraceable_numeric_facts = []
-    for f in facts:
-        if isinstance(f.value, (int, float)) and f.source_transaction_ids:
-            if not _value_appears(f.value, numbers_in_text):
-                continue  # the room may choose not to mention every fact; not a hard failure
+    # Fact labels and notes are written by code, not the model (e.g. "fewer
+    # than 10 transactions"). Quoted verbatim, their digits are not claims;
+    # the same digits anywhere else still are.
+    fixed_text = sorted({t for f in facts for t in (f.label, f.note) if t}, key=len, reverse=True)
 
+    def claim_numbers(text: str) -> list[str]:
+        for t in fixed_text:
+            text = text.replace(t, " ")
+        return _numbers_in_text(text)
+
+    claims, trailing = _claims(narrative)
+    unknown, uncited, unsupported, misattributed = set(), [], [], []
+    covered: set[int] = set()
+
+    for text, cited in claims:
+        cited_set = set(cited)
+        unknown |= {c for c in cited_set if c not in known_ids}
+        supported_ids: set[str] = set()
+        for tok in claim_numbers(text):
+            backing = [i for i, f in enumerate(numeric_facts)
+                       if _token_matches(tok, f.value) and cited_set & set(f.source_transaction_ids)]
+            if not backing:
+                unsupported.append({"number": tok, "cited": sorted(cited_set), "claim": text.strip()[-160:]})
+                continue
+            covered.update(backing)
+            for i in backing:
+                supported_ids |= set(numeric_facts[i].source_transaction_ids)
+        stray = sorted((cited_set & known_ids) - supported_ids)
+        if stray:
+            misattributed.append({"ids": stray, "claim": text.strip()[-160:]})
+
+    for tok in claim_numbers(trailing):
+        uncited.append({"number": tok, "claim": trailing.strip()[-160:]})
+
+    uncovered = ([{"label": f.label, "value": f.value}
+                  for i, f in enumerate(numeric_facts) if i not in covered]
+                 if require_full_coverage else [])
+
+    all_cited = CITE_RE.findall(narrative)
     return {
-        "ok": len(unknown) == 0,
-        "unknown_citations": unknown,
-        "cited_ids": sorted(set(cited)),
-        "numbers_found": numbers_in_text,
+        "ok": not (unknown or uncited or unsupported or misattributed or uncovered),
+        "unknown_citations": sorted(unknown),
+        "uncited_numbers": uncited,
+        "unsupported_numbers": unsupported,
+        "misattributed_citations": misattributed,
+        "uncovered_facts": uncovered,
+        "cited_ids": sorted(set(all_cited)),
+        "numbers_found": _numbers_in_text(narrative),
     }
 
 
@@ -185,10 +259,12 @@ def _openai_backend(facts: list[Fact], audience: str, room_label: str) -> str:
         f"You are writing a {audience} brief for {room_label}.\n"
         "You are given a fixed list of facts below, each with the exact source "
         "IDs that produced it. Rules:\n"
-        "1. Use ONLY the numbers given below — never compute or guess a new one.\n"
+        "1. Use ONLY the numbers given below, written exactly as given (you may "
+        "round, but never compute or guess a new one), and state every fact.\n"
         "2. After every number you state, add citation tokens in the form "
         "[cite:<id>] using ONLY the ids listed for that fact.\n"
-        "3. Do not cite an id that is not listed for the fact you are discussing.\n"
+        "3. Do not cite an id that is not listed for the fact you are discussing, "
+        "and do not put any other number (dates, counts, labels) before a citation.\n"
         "4. If a fact's value is null, you may mention it is unavailable but "
         "must not invent a replacement number.\n\n"
         f"Facts:\n{fact_lines}\n\n"
@@ -279,10 +355,49 @@ def _self_check() -> None:
 
     # validate_narrative must catch an invented citation (simulate a model
     # that cited an id outside the fact list).
-    forged = "Runway is 4.20. [cite:txn_999]"
+    forged = "Runway is 4.20 [cite:txn_999]"
     out_check = validate_narrative(forged, good_facts)
     checks.append(("validate_narrative flags a citation to an unknown id",
                     not out_check["ok"] and "txn_999" in out_check["unknown_citations"], out_check))
+
+    # The reviewer-x blocker cases: each MUST fail.
+    two_facts = [
+        Fact(label="Runway", value=4.2, source_transaction_ids=["txn_001", "txn_002"]),
+        Fact(label="Concentration", value=39.0, source_transaction_ids=["txn_010"]),
+    ]
+    good = "Runway is 4.2 months [cite:txn_001][cite:txn_002]. Top customer is 39% of revenue [cite:txn_010]."
+    checks.append(("a correct two-claim narrative passes", validate_narrative(good, two_facts)["ok"],
+                   validate_narrative(good, two_facts)))
+    rounded = "Runway is 4 months [cite:txn_001]. Top customer is 39.0% [cite:txn_010]."
+    checks.append(("correct rounding to the token's precision passes", validate_narrative(rounded, two_facts)["ok"],
+                   validate_narrative(rounded, two_facts)))
+    cases = {
+        "an invented number with a valid citation fails":
+            "Runway is 9.7 months [cite:txn_001]. Top customer is 39% [cite:txn_010].",
+        "an invented number with no citation fails":
+            "Runway is 4.2 months [cite:txn_001]. Top customer is 39% [cite:txn_010]. Burn is 12,500.",
+        "a real value cited to the wrong fact's source fails":
+            "Runway is 4.2 months [cite:txn_010]. Top customer is 39% [cite:txn_001].",
+        "an extra citation from another fact fails":
+            "Runway is 4.2 months [cite:txn_001][cite:txn_010]. Top customer is 39% [cite:txn_010].",
+        "an empty narrative fails": "",
+        "a narrative that drops a fact fails": "Runway is 4.2 months [cite:txn_001].",
+        "a wrong rounding fails": "Runway is 4 months [cite:txn_001]. Top customer is 40% [cite:txn_010].",
+    }
+    noted = two_facts + [Fact(label="Benford score", value=None, note="fewer than 10 transactions")]
+    cases["a code note's number reused outside the note fails"] = (
+        "Runway is 4.2 months [cite:txn_001]. Top customer is 39% [cite:txn_010]. Only 10 customers.")
+    ok_note = ("Runway is 4.2 months [cite:txn_001]. Top customer is 39% [cite:txn_010]. "
+               "Benford score: not available (fewer than 10 transactions).")
+    checks.append(("a code-authored note quoted verbatim is not a claim",
+                   validate_narrative(ok_note, noted)["ok"], validate_narrative(ok_note, noted)))
+    for name, text in cases.items():
+        res = validate_narrative(text, two_facts)
+        checks.append((name, not res["ok"], res))
+    ident = ("Revenue for biz_03 in FY2025 per 10-K 0000320193-25-000079, 3-month view, "
+             "period ended 2025-09-27, is 4.2 [cite:txn_001]. Concentration 39 [cite:txn_010].")
+    checks.append(("identifiers, dates and labels are not treated as numeric claims",
+                   validate_narrative(ident, two_facts)["ok"], validate_narrative(ident, two_facts)))
 
     # Unknown backend name fails loud.
     try:
