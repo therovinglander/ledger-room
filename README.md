@@ -28,10 +28,10 @@ visibility + risk signal (Relay). See `PROJECT.md` for full context.
 | Component | Status |
 |---|---|
 | `skills/cash_kpis.py`, `accrual_kpis.py`, `anomaly_detection.py`, `reconciliation.py`, `citation.py` | ✅ built, self-checks pass |
-| `skills/narrate.py` — mock + openai backends, input/output citation validation | ✅ built, offline self-check passes |
+| `skills/narrate.py` — mock + openai backends, claim-level citation validation (every number must match a fact whose own sources are cited right after it; no uncited numbers; every fact stated) | ✅ built, offline self-check passes (incl. invented-number, wrong-fact, empty and dropped-fact cases) |
 | `rooms/cash_flow_room.py` — Relay-lens cash/risk brief, all 25 businesses | ✅ runs end-to-end, writes `out/cash_flow_room_report.{json,txt}` |
 | `rooms/filing_extraction_room.py` — Daloopa-lens KPI extraction report, all 25 businesses | ✅ runs end-to-end, writes `out/filing_extraction_room_report.{json,txt}` |
-| `skills/edgar.py` — real SEC EDGAR XBRL pull, wired into `filing_extraction_room` only via `--edgar` | ✅ pulled 3 sample companies (Apple, Donaldson, Conagra); writes `out/filing_extraction_room_edgar_report.{json,txt}` |
+| `skills/edgar.py` — real SEC EDGAR XBRL pull, wired into `filing_extraction_room` only via `--edgar` | ✅ pulls 3 sample companies (Apple, Donaldson, Conagra; CIKs checked against SEC's entity name); each figure states its fiscal period and source filing; offline self-check: `python3 skills/edgar.py --self-check` |
 
 Run any self-check with `python3 skills/<name>.py` from the `skills/` dir.
 Run a room with `python3 rooms/<room>.py` from the repo root (optionally
@@ -39,13 +39,20 @@ pass one or more `business_id`s to scope it; `filing_extraction_room.py`
 also takes `--edgar` to additionally pull and report on the 3 real sample
 companies).
 
-**Known caveat (documented, not hidden):** the SEC's `Revenues` XBRL tag was
-deprecated by several filers in favor of
-`RevenueFromContractWithCustomerExcludingAssessedTax` around 2018, so the
-EDGAR pull's "latest revenue" figure for some companies is a few years
-stale relative to net income/D&A/AR (which use tags still in active use).
-Fine for proving the connector works end-to-end against real filings; a
-follow-up would walk a priority list of revenue tags, not just `Revenues`.
+**How EDGAR figures are chosen (`edgar.select_annual`):** a 10-K repeats
+prior-year comparatives under the same accession number, so the fiscal year
+of the filing does not identify a figure. Each figure is the full-year
+period (350-380 days; balances use the balance date) with the latest end
+date; for the same period, the most recently filed 10-K or 10-K/A wins, so
+restatements supersede originals and the citation points at the filing
+whose number is shown. Revenue walks a priority list of tags (`Revenues`,
+then the ASC 606 tags, then legacy sales tags) because many filers dropped
+`Revenues` around 2018. Any figure whose period ends more than ~18 months
+before the company's newest period is marked STALE in the report.
+
+**Known caveats (documented, not hidden):** the D&A and allowance tags also
+vary by filer; a company that uses none of the listed tags shows "no
+full-year 10-K figure reported" rather than a guess.
 
 ## LLM backend
 

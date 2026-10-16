@@ -106,30 +106,44 @@ def build_edgar_facts(cik: str, company_name: str) -> list[Fact] | None:
     don't carry the full breakdown accrual_kpis.py's synthetic rows do
     (no COGS/opex split, no bad-debt rate), so this is an honest, narrower
     extraction report — latest-fiscal-year figures cited to their own SEC
-    accession number — not a forced remap onto every synthetic KPI."""
+    accession number — not a forced remap onto every synthetic KPI.
+
+    Each figure states the exact period it measures and the filing it came
+    from (edgar.select_annual), so a citation can never sit next to a prior
+    year's comparative."""
     cache_path = ROOT / "data" / "edgar_cache" / f"{cik}.json"
     if not cache_path.exists():
         return None
     cached = json.loads(cache_path.read_text())
 
+    import edgar  # local import: optional network dependency
+
+    picks = {f: edgar.select_annual(cached.get(f, []), edgar.GAAP_CONCEPTS[f]) for f in edgar.GAAP_CONCEPTS}
+    newest_end = max((p["period_end"] for p in picks.values() if p), default=None)
+
     facts = []
     labels = {
-        "revenue_accrual": "Revenue (latest 10-K, USD)",
-        "net_income": "Net income (latest 10-K, USD)",
-        "depreciation_amortization": "D&A (latest 10-K, USD)",
-        "ar_balance": "Accounts receivable, net (latest 10-K, USD)",
+        "revenue_accrual": "Revenue (USD)",
+        "net_income": "Net income (USD)",
+        "depreciation_amortization": "D&A (USD)",
+        "ar_balance": "Accounts receivable, net (USD)",
     }
     for field_name, label in labels.items():
-        rows = cached.get(field_name, [])
-        if not rows:
-            facts.append(Fact(label=label, value=None, note="not reported / not pulled"))
+        pick = picks.get(field_name)
+        if not pick:
+            facts.append(Fact(label=label, value=None, note="no full-year 10-K figure reported"))
             continue
-        latest = max(rows, key=lambda r: (r.get("fiscal_year") or 0))
+        period = (f"fiscal year {pick['period_start']} to {pick['period_end']}" if pick.get("period_start")
+                  else f"balance at {pick['period_end']}")
+        stale = ""
+        if newest_end and edgar._days(pick["period_end"], newest_end) > edgar.STALE_DAYS:
+            stale = f"; STALE, newest period for this company ends {newest_end}"
         facts.append(Fact(
             label=label,
-            value=latest["value"],
-            source_transaction_ids=latest["source_transaction_ids"],
-            note=f"FY{latest['fiscal_year']} {latest['form']} filing, accession {latest['accession_number']}",
+            value=pick["value"],
+            source_transaction_ids=pick["source_transaction_ids"],
+            note=f"{period}, us-gaap:{pick['concept']}, {pick['form']} filed {pick['filed']}, "
+                 f"accession {pick['accession_number']}{stale}",
         ))
     return facts
 
@@ -146,8 +160,13 @@ def run_edgar_companies(backend: str = "mock") -> list[dict]:
         if facts is None:
             reports.append({"cik": cik, "company_name": company_name, "status": "not_cached"})
             continue
+        cache = json.loads((ROOT / "data" / "edgar_cache" / f"{cik}.json").read_text())
+        sec_name = cache.get("_sec_entity_name")
+        if not sec_name:
+            reports.append({"cik": cik, "company_name": company_name, "status": "stale_cache_no_entity_name"})
+            continue
         result = narrate(facts, audience="buy-side financial analyst",
-                          room_label=f"Filing Extraction Room (EDGAR) — {company_name} ({cik})",
+                          room_label=f"Filing Extraction Room (EDGAR) — {sec_name} ({cik})",
                           backend=backend)
         reports.append({"cik": cik, "company_name": company_name, "status": "ok",
                          "facts": [vars(f) for f in facts], **result})
