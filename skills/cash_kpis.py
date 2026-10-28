@@ -1,4 +1,4 @@
-"""Cash-basis KPIs for the cash_flow_room (Relay lens).
+"""Cash-basis KPIs for the cash_flow_room.
 
 Design rule (PROJECT.md §2): code computes and cites, the model never sees
 raw rows. Every function here returns a dict with a numeric "value" plus

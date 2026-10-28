@@ -1,6 +1,6 @@
 """pricing_tier.py — deterministic risk-tier recommendation.
 
-Third room, added for the Zafin pivot (governed relationship pricing). Same
+Third room, added for the governed-relationship-pricing pivot. Same
 rule as every other skill here: code computes and cites, the model only
 narrates the decision afterward. This module makes ZERO judgment calls with
 an LLM — the tier is a deterministic function of flags already computed by

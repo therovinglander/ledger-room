@@ -1,10 +1,10 @@
-"""filing_extraction_room.py — Structured KPI extraction report (Daloopa lens).
+"""filing_extraction_room.py — Structured KPI extraction report.
 
 Entry point that reads monthly_financials.csv, calls accrual KPI skills,
 assembles facts, and produces a structured report with confidence flags for
 a financial analyst reviewing extracted figures.
 
-Audience: Daloopa persona (§1 in PERSONAS.md) — buy-side financial analyst
+Audience: buy-side financial analyst persona (§1 in PERSONAS.md) —
 checking extracted figures from a company's filings before they go into a
 model or memo. Every number must be traceable to its source, and anything
 that doesn't reconcile must be flagged.

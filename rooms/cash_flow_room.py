@@ -1,10 +1,10 @@
-"""cash_flow_room.py — SMB cash-runway/risk brief for Relay lens.
+"""cash_flow_room.py — SMB cash-runway/risk brief.
 
 Entry point that reads transactions.csv, calls cash KPI skills, assembles
 facts, and produces a plain-English brief for a non-technical SMB
 underwriter or risk analyst.
 
-Audience: Relay persona (§2 in PERSONAS.md) — credit/risk underwriter
+Audience: SMB credit/risk underwriter persona (§2 in PERSONAS.md) —
 checking if an SMB is about to run out of cash, has concentrated revenue,
 or shows anomalous transaction patterns.
 

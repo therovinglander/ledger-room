@@ -1,10 +1,10 @@
-# Ledger Room — Demo Script (Zafin event, phone-in-hand)
+# Ledger Room — Demo Script (phone-in-hand)
 
 **Context:** Hallway/event demo, 2-3 minutes, phone screen, one-on-one or small
 group. Audience: banking product/pricing/relationship people — they think in
 "governed decisions," "auditability," "relationship pricing," not in
-"KPIs" or "LLM accuracy." Pitch accordingly. Daloopa/Relay framing is gone;
-this is now a general governed-decisioning demo.
+"KPIs" or "LLM accuracy." Pitch accordingly. This is a general
+governed-decisioning demo, not tied to any specific company or interview.
 
 File to open: `ledger_room_demo_nojs.html` (clickable with no JS execution —
 safe on any phone/QuickLook).
@@ -13,8 +13,8 @@ safe on any phone/QuickLook).
 
 ## 0. One-line hook (before you even open the phone)
 
-> "I built a small demo of something your Deal Manager / governed-AI pitch
-> needs everywhere: an LLM that explains a number, but can never make one up.
+> "I built a small demo of something enterprise 'governed AI' pitches
+> need everywhere: an LLM that explains a number, but can never make one up.
 > Thirty seconds?"
 
 Wait for a yes. Don't explain further until the phone is out.
@@ -93,8 +93,8 @@ Switch to `biz_13` pill.
 > "This is a toy dataset, built in a weekend. The pattern underneath it —
 > compute in code, cite everything, validate the narration before it ships —
 > is what 'governed AI' means for pricing and relationship decisions, not
-> just KPI extraction. Is this a real gap for you, or is Zafin's Deal Manager
-> already doing this?"
+> just KPI extraction. Is this a real gap in how your org handles AI-assisted
+> pricing decisions today?"
 
 Let them answer. This is the actual ask — their reaction to the pricing-room
 *pattern* is the signal you're collecting, not admiration of the demo. It's
@@ -120,7 +120,7 @@ worth productionizing," not "would this be useful if it existed."
 
 ## Don'ts
 
-- Don't open with "I built this for a Daloopa/Relay interview" — dead
+- Don't open with "I built this for an interview" — dead
   context, wastes their attention budget.
 - Don't walk through every KPI card — the narrative + citation chip is the
   whole point; the cards are supporting detail, not the demo.

@@ -1,14 +1,14 @@
 # Ledger Room — Personas
 
-Two personas, one per room, matching the two interview targets in
-`PROJECT.md` §1. Each persona drives what that room's `narrate.py` output
-should look and read like — tone, depth, and which KPIs lead.
+Three personas, one per room. Each persona drives what that room's
+`narrate.py` output should look and read like — tone, depth, and which KPIs
+lead.
 
-## 1. Buy-side financial analyst — `filing_extraction_room` (Daloopa lens)
+## 1. Buy-side financial analyst — `filing_extraction_room`
 
 **Who:** A financial analyst or associate at a buy-side fund or research
 shop, reviewing extracted figures from a company's filings before they go
-into a model or memo. This is literally Daloopa's own end user.
+into a model or memo.
 
 **What they need from this tool:**
 - Every number traced to its exact source line — no "trust me."
@@ -31,14 +31,13 @@ into a model or memo. This is literally Daloopa's own end user.
 | "Does this business's bad debt look elevated, and why?" | `accrual_kpis.bad_debt_profile` |
 | "Is this net income number actually consistent with its line items?" | `accrual_kpis.verify_net_income` |
 | "Where does the depreciation in this month's P&L actually come from?" | `accrual_kpis.da_trend` |
-| "Why don't cash receipts and recognized revenue match this month?" | `reconciliation.py` (next) |
+| "Why don't cash receipts and recognized revenue match this month?" | `reconciliation.py` |
 
-## 2. SMB credit/risk underwriter — `cash_flow_room` (Relay lens)
+## 2. SMB credit/risk underwriter — `cash_flow_room`
 
 **Who:** Someone screening a small business's cash position for
-underwriting or risk-monitoring purposes — Relay's own stated pitch is
-"turn cash flow from stress into clear signal," for SMBs with as little as
-~27 days of cash on hand.
+underwriting or risk-monitoring purposes — turning raw cash flow into a
+clear stress signal for SMBs that may have only weeks of runway.
 
 **What they need from this tool:**
 - A fast, plain-English read on: is this business about to run out of cash,
@@ -66,11 +65,38 @@ underwriting or risk-monitoring purposes — Relay's own stated pitch is
 | "Are there suspicious round-number or unverified-payee transactions?" | `anomaly_detection.round_number_cluster` |
 | "Is anything about this business's transaction pattern statistically odd?" | `anomaly_detection.benford_deviation` |
 
-## 3. Shared design constraint across both personas
+## 3. Relationship manager / pricing desk — `pricing_room`
 
-Neither persona should ever see a number the model invented. Both rooms
-read the **same two underlying principles**: code computes, code cites, the
-model narrates only what it's handed. This is the one claim Andrew needs to
-be able to defend line-by-line in either interview — these personas exist
-so the artifact is built *toward* that defense, not just toward a demo that
-looks good once.
+**Who:** Someone deciding what to charge an account or what terms to
+attach — relationship pricing, covenant requirements, credit-line
+decisions. Cares less about the raw KPI and more about the decision it
+implies.
+
+**What they need from this tool:**
+- A single recommended tier (standard / monitor / restricted) with the
+  specific risk flags that drove it — not a KPI dump they have to
+  interpret themselves.
+- Confidence that the recommendation logic is auditable: a deterministic,
+  documented threshold rule, not an opaque model judgment call.
+
+**What makes them trust (or distrust) the output:**
+- Trust: a tier recommendation that cites only the flags that actually
+  fired — no padding, no vague "elevated risk" without a named reason.
+- Distrust: a tier with no citation trail, or a "clean" account (Tier A)
+  that still gets a fabricated justification instead of an honest "nothing
+  to cite."
+
+**Primary questions this persona asks, mapped to skills:**
+| Question | Skill / function |
+|---|---|
+| "What tier should this account be priced at, and why?" | `pricing_tier.recommend_pricing_tier` |
+| "Which specific risk signals drove this recommendation?" | same — `triggered_flags` field |
+| "Is this decision auditable after the fact?" | same — citations are the union of only fired flags |
+
+## 4. Shared design constraint across all three personas
+
+No persona should ever see a number the model invented. All three rooms
+read the **same underlying principle**: code computes, code cites, the
+model narrates only what it's handed. This is the one claim that has to
+hold up line-by-line under scrutiny — these personas exist so the artifact
+is built *toward* that defense, not just toward a demo that looks good once.

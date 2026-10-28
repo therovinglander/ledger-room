@@ -1,4 +1,4 @@
-"""Cash-vs-accrual reconciliation for the filing_extraction_room (Daloopa lens).
+"""Cash-vs-accrual reconciliation for the filing_extraction_room.
 
 The data layer has a deliberate, inspectable gap between cash and accrual
 revenue (src/generate_financials.py: each business gets a fixed 0-2 month
@@ -8,7 +8,7 @@ citations on BOTH sides: the cash transactions that were collected in a
 period, and the accrual-basis row (with its own revenue_basis_refs) that
 recognizes revenue for that same period.
 
-This is the concrete, demoable version of the Daloopa talking point "here
+This is the concrete, demoable version of the talking point "here
 is exactly where these two views of the business disagree, and why."
 """
 from __future__ import annotations

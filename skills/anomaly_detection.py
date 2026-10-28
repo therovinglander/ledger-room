@@ -1,4 +1,4 @@
-"""Anomaly detection skills for the cash_flow_room (Relay lens).
+"""Anomaly detection skills for the cash_flow_room.
 
 Two deterministic, citeable checks — no ML, no model judgment call on which
 rows are anomalous. The model (narrate.py) only ever reads the *output* of

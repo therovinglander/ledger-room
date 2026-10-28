@@ -1,4 +1,4 @@
-"""Accrual-basis KPIs for the filing_extraction_room (Daloopa lens).
+"""Accrual-basis KPIs for the filing_extraction_room.
 
 Same rule as cash_kpis.py: code computes and cites, narrate.py never sees
 raw rows. Source here is data/monthly_financials.csv, where each row
@@ -8,10 +8,10 @@ depreciation schedule) — these functions re-surface those refs, they don't
 invent new ones.
 
 This module also carries the "evaluate AI output quality, flag low-
-confidence extractions" Daloopa talking point literally: `verify_net_income`
+confidence extractions" talking point literally: `verify_net_income`
 independently recomputes net_income from the row's own component fields and
 flags any row where the reported figure doesn't match — i.e. it treats the
-CSV's net_income column the way Daloopa would treat a model's extracted
+CSV's net_income column the way an analyst would treat a model's extracted
 figure, and checks it rather than trusting it.
 """
 from __future__ import annotations
@@ -63,7 +63,7 @@ def verify_net_income(row: dict, tolerance: float = 0.01) -> dict:
     fields (revenue - cogs - opex_payroll - opex_rent - opex_other - D&A -
     bad_debt_expense) and compares to the reported net_income column.
 
-    This is the Daloopa-style confidence check: treat the stored figure as
+    This is a confidence check: treat the stored figure as
     an extraction to be verified, not a fact to be trusted. Mismatch beyond
     `tolerance` (rounding noise) is flagged low_confidence_extraction.
     """

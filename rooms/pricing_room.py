@@ -1,10 +1,10 @@
 """pricing_room.py — relationship pricing / risk-tier recommendation.
 
-Third room, added for the Zafin pivot: same facts-and-cite architecture as
-cash_flow_room.py and filing_extraction_room.py, but the output is a
-decision (a pricing tier + required terms) instead of a KPI readout. This is
-deliberately the room that speaks "governed relationship pricing" — Zafin's
-own language — rather than "extraction" or "underwriting."
+Third room: same facts-and-cite architecture as cash_flow_room.py and
+filing_extraction_room.py, but the output is a decision (a pricing tier +
+required terms) instead of a KPI readout. This is deliberately the room
+that speaks "governed relationship pricing" rather than "extraction" or
+"underwriting."
 
 skills/pricing_tier.py makes the tier decision in code (a simple, documented,
 auditable threshold rule — zero model involvement in the decision itself).
