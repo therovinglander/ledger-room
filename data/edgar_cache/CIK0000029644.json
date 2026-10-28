@@ -1,0 +1,5773 @@
+{
+  "revenue_accrual": [
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 2220300000,
+      "period_start": "2015-08-01",
+      "period_end": "2016-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 553000000,
+      "period_start": "2016-08-01",
+      "period_end": "2016-10-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016Q3",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 550600000,
+      "period_start": "2016-11-01",
+      "period_end": "2017-01-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016Q4",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 608200000,
+      "period_start": "2017-02-01",
+      "period_end": "2017-04-30",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017Q1",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 2371900000,
+      "period_start": "2016-08-01",
+      "period_end": "2017-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 2371900000,
+      "period_start": "2016-08-01",
+      "period_end": "2017-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 660100000,
+      "period_start": "2017-05-01",
+      "period_end": "2017-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017Q2",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 644800000,
+      "period_start": "2017-08-01",
+      "period_end": "2017-10-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017Q3",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 644800000,
+      "period_start": "2017-08-01",
+      "period_end": "2017-10-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 664700000,
+      "period_start": "2017-11-01",
+      "period_end": "2018-01-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017Q4",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 664700000,
+      "period_start": "2017-11-01",
+      "period_end": "2018-01-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 700000000,
+      "period_start": "2018-02-01",
+      "period_end": "2018-04-30",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018Q1",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 700000000,
+      "period_start": "2018-02-01",
+      "period_end": "2018-04-30",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 2734200000,
+      "period_start": "2017-08-01",
+      "period_end": "2018-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 2734200000,
+      "period_start": "2017-08-01",
+      "period_end": "2018-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 724700000,
+      "period_start": "2018-05-01",
+      "period_end": "2018-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018Q2",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 724700000,
+      "period_start": "2018-05-01",
+      "period_end": "2018-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 701400000,
+      "period_start": "2018-08-01",
+      "period_end": "2018-10-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018Q3",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 703700000,
+      "period_start": "2018-11-01",
+      "period_end": "2019-01-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018Q4",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 712800000,
+      "period_start": "2019-02-01",
+      "period_end": "2019-04-30",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2019Q1",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 2844900000,
+      "period_start": "2018-08-01",
+      "period_end": "2019-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2019",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "Revenues",
+      "value": 726900000,
+      "period_start": "2019-05-01",
+      "period_end": "2019-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2019Q2",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 2371900000,
+      "period_start": "2016-08-01",
+      "period_end": "2017-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 2734200000,
+      "period_start": "2017-08-01",
+      "period_end": "2018-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 2734200000,
+      "period_start": "2017-08-01",
+      "period_end": "2018-07-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018",
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 701400000,
+      "period_start": "2018-08-01",
+      "period_end": "2018-10-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018Q3",
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 703700000,
+      "period_start": "2018-11-01",
+      "period_end": "2019-01-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018Q4",
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 712800000,
+      "period_start": "2019-02-01",
+      "period_end": "2019-04-30",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2019Q1",
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 2844900000,
+      "period_start": "2018-08-01",
+      "period_end": "2019-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 2844900000,
+      "period_start": "2018-08-01",
+      "period_end": "2019-07-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 2844900000,
+      "period_start": "2018-08-01",
+      "period_end": "2019-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2019",
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 726900000,
+      "period_start": "2019-05-01",
+      "period_end": "2019-07-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2019Q2",
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 672700000,
+      "period_start": "2019-08-01",
+      "period_end": "2019-10-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 662000000,
+      "period_start": "2019-11-01",
+      "period_end": "2020-01-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 629700000,
+      "period_start": "2020-02-01",
+      "period_end": "2020-04-30",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 2581800000,
+      "period_start": "2019-08-01",
+      "period_end": "2020-07-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 2581800000,
+      "period_start": "2019-08-01",
+      "period_end": "2020-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 2581800000,
+      "period_start": "2019-08-01",
+      "period_end": "2020-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2020",
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 617400000,
+      "period_start": "2020-05-01",
+      "period_end": "2020-07-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2020Q2",
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 2853900000,
+      "period_start": "2020-08-01",
+      "period_end": "2021-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 2853900000,
+      "period_start": "2020-08-01",
+      "period_end": "2021-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 2853900000,
+      "period_start": "2020-08-01",
+      "period_end": "2021-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2021",
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 3306600000,
+      "period_start": "2021-08-01",
+      "period_end": "2022-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 3306600000,
+      "period_start": "2021-08-01",
+      "period_end": "2022-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 3306600000,
+      "period_start": "2021-08-01",
+      "period_end": "2022-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2022",
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 3430800000,
+      "period_start": "2022-08-01",
+      "period_end": "2023-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 3430800000,
+      "period_start": "2022-08-01",
+      "period_end": "2023-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 3430800000,
+      "period_start": "2022-08-01",
+      "period_end": "2023-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2023",
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 3586300000,
+      "period_start": "2023-08-01",
+      "period_end": "2024-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 3586300000,
+      "period_start": "2023-08-01",
+      "period_end": "2024-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 3586300000,
+      "period_start": "2023-08-01",
+      "period_end": "2024-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 3690900000,
+      "period_start": "2024-08-01",
+      "period_end": "2025-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 3690900000,
+      "period_start": "2024-08-01",
+      "period_end": "2025-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2025",
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "value": 3885600000,
+      "period_start": "2025-08-01",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2026",
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 1868629000,
+      "period_start": "2008-08-01",
+      "period_end": "2009-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2009",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 428080000,
+      "period_start": "2009-08-01",
+      "period_end": "2009-10-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2009Q3",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 436122000,
+      "period_start": "2009-11-01",
+      "period_end": "2010-01-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2009Q4",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 497619000,
+      "period_start": "2010-02-01",
+      "period_end": "2010-04-30",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010Q1",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 1877064000,
+      "period_start": "2009-08-01",
+      "period_end": "2010-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 1877064000,
+      "period_start": "2009-08-01",
+      "period_end": "2010-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 515243000,
+      "period_start": "2010-05-01",
+      "period_end": "2010-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010Q2",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 536909000,
+      "period_start": "2010-08-01",
+      "period_end": "2010-10-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010Q3",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 536909000,
+      "period_start": "2010-08-01",
+      "period_end": "2010-10-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 537105000,
+      "period_start": "2010-11-01",
+      "period_end": "2011-01-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010Q4",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 537105000,
+      "period_start": "2010-11-01",
+      "period_end": "2011-01-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 594565000,
+      "period_start": "2011-02-01",
+      "period_end": "2011-04-30",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011Q1",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 594565000,
+      "period_start": "2011-02-01",
+      "period_end": "2011-04-30",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2294029000,
+      "period_start": "2010-08-01",
+      "period_end": "2011-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2294029000,
+      "period_start": "2010-08-01",
+      "period_end": "2011-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2294029000,
+      "period_start": "2010-08-01",
+      "period_end": "2011-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 625450000,
+      "period_start": "2011-05-01",
+      "period_end": "2011-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011Q2",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 625450000,
+      "period_start": "2011-05-01",
+      "period_end": "2011-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 608295000,
+      "period_start": "2011-08-01",
+      "period_end": "2011-10-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011Q3",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 608295000,
+      "period_start": "2011-08-01",
+      "period_end": "2011-10-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 580883000,
+      "period_start": "2011-11-01",
+      "period_end": "2012-01-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011Q4",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 580883000,
+      "period_start": "2011-11-01",
+      "period_end": "2012-01-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 647237000,
+      "period_start": "2012-02-01",
+      "period_end": "2012-04-30",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012Q1",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 647237000,
+      "period_start": "2012-02-01",
+      "period_end": "2012-04-30",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2493248000,
+      "period_start": "2011-08-01",
+      "period_end": "2012-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2493248000,
+      "period_start": "2011-08-01",
+      "period_end": "2012-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2493248000,
+      "period_start": "2011-08-01",
+      "period_end": "2012-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 656833000,
+      "period_start": "2012-05-01",
+      "period_end": "2012-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012Q2",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 656833000,
+      "period_start": "2012-05-01",
+      "period_end": "2012-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 588947000,
+      "period_start": "2012-08-01",
+      "period_end": "2012-10-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012Q3",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 588947000,
+      "period_start": "2012-08-01",
+      "period_end": "2012-10-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 596036000,
+      "period_start": "2012-11-01",
+      "period_end": "2013-01-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012Q4",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 596036000,
+      "period_start": "2012-11-01",
+      "period_end": "2013-01-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 619371000,
+      "period_start": "2013-02-01",
+      "period_end": "2013-04-30",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013Q1",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 619371000,
+      "period_start": "2013-02-01",
+      "period_end": "2013-04-30",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2436948000,
+      "period_start": "2012-08-01",
+      "period_end": "2013-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2436948000,
+      "period_start": "2012-08-01",
+      "period_end": "2013-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2436948000,
+      "period_start": "2012-08-01",
+      "period_end": "2013-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 632594000,
+      "period_start": "2013-05-01",
+      "period_end": "2013-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013Q2",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 632594000,
+      "period_start": "2013-05-01",
+      "period_end": "2013-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 599384000,
+      "period_start": "2013-08-01",
+      "period_end": "2013-10-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013Q3",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 599384000,
+      "period_start": "2013-08-01",
+      "period_end": "2013-10-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 581622000,
+      "period_start": "2013-11-01",
+      "period_end": "2014-01-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013Q4",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 581622000,
+      "period_start": "2013-11-01",
+      "period_end": "2014-01-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 624234000,
+      "period_start": "2014-02-01",
+      "period_end": "2014-04-30",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014Q1",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 624234000,
+      "period_start": "2014-02-01",
+      "period_end": "2014-04-30",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2473500000,
+      "period_start": "2013-08-01",
+      "period_end": "2014-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014",
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2473466000,
+      "period_start": "2013-08-01",
+      "period_end": "2014-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2473466000,
+      "period_start": "2013-08-01",
+      "period_end": "2014-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 668226000,
+      "period_start": "2014-05-01",
+      "period_end": "2014-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014Q2",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 668226000,
+      "period_start": "2014-05-01",
+      "period_end": "2014-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 596500000,
+      "period_start": "2014-08-01",
+      "period_end": "2014-10-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 596510000,
+      "period_start": "2014-08-01",
+      "period_end": "2014-10-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 538000000,
+      "period_start": "2014-08-01",
+      "period_end": "2014-10-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014Q3",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 588500000,
+      "period_start": "2014-11-01",
+      "period_end": "2015-01-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 588537000,
+      "period_start": "2014-11-01",
+      "period_end": "2015-01-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 517200000,
+      "period_start": "2014-11-01",
+      "period_end": "2015-01-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014Q4",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 575600000,
+      "period_start": "2015-02-01",
+      "period_end": "2015-04-30",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 575588000,
+      "period_start": "2015-02-01",
+      "period_end": "2015-04-30",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 571300000,
+      "period_start": "2015-02-01",
+      "period_end": "2015-04-30",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015Q1",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2371200000,
+      "period_start": "2014-08-01",
+      "period_end": "2015-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2371213000,
+      "period_start": "2014-08-01",
+      "period_end": "2015-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2371200000,
+      "period_start": "2014-08-01",
+      "period_end": "2015-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 610600000,
+      "period_start": "2015-05-01",
+      "period_end": "2015-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 610578000,
+      "period_start": "2015-05-01",
+      "period_end": "2015-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 593800000,
+      "period_start": "2015-05-01",
+      "period_end": "2015-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015Q2",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 538000000,
+      "period_start": "2015-08-01",
+      "period_end": "2015-10-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 553000000,
+      "period_start": "2015-08-01",
+      "period_end": "2015-10-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015Q3",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 517200000,
+      "period_start": "2015-11-01",
+      "period_end": "2016-01-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 550600000,
+      "period_start": "2015-11-01",
+      "period_end": "2016-01-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015Q4",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 571300000,
+      "period_start": "2016-02-01",
+      "period_end": "2016-04-30",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 608200000,
+      "period_start": "2016-02-01",
+      "period_end": "2016-04-30",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016Q1",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2220300000,
+      "period_start": "2015-08-01",
+      "period_end": "2016-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2220300000,
+      "period_start": "2015-08-01",
+      "period_end": "2016-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 593800000,
+      "period_start": "2016-05-01",
+      "period_end": "2016-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 660100000,
+      "period_start": "2016-05-01",
+      "period_end": "2016-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016Q2",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "revenue_accrual",
+      "concept": "SalesRevenueGoodsNet",
+      "value": 2371900000,
+      "period_start": "2016-08-01",
+      "period_end": "2017-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    }
+  ],
+  "depreciation_amortization": [
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 58597000,
+      "period_start": "2008-08-01",
+      "period_end": "2009-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2009",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 59232000,
+      "period_start": "2009-08-01",
+      "period_end": "2010-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 59232000,
+      "period_start": "2009-08-01",
+      "period_end": "2010-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 60491000,
+      "period_start": "2010-08-01",
+      "period_end": "2011-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 60491000,
+      "period_start": "2010-08-01",
+      "period_end": "2011-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 60491000,
+      "period_start": "2010-08-01",
+      "period_end": "2011-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 61165000,
+      "period_start": "2011-08-01",
+      "period_end": "2012-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 61165000,
+      "period_start": "2011-08-01",
+      "period_end": "2012-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 61165000,
+      "period_start": "2011-08-01",
+      "period_end": "2012-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 64290000,
+      "period_start": "2012-08-01",
+      "period_end": "2013-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 64290000,
+      "period_start": "2012-08-01",
+      "period_end": "2013-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 64290000,
+      "period_start": "2012-08-01",
+      "period_end": "2013-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 67163000,
+      "period_start": "2013-08-01",
+      "period_end": "2014-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 67163000,
+      "period_start": "2013-08-01",
+      "period_end": "2014-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 67200000,
+      "period_start": "2013-08-01",
+      "period_end": "2014-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014",
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 74298000,
+      "period_start": "2014-08-01",
+      "period_end": "2015-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 74300000,
+      "period_start": "2014-08-01",
+      "period_end": "2015-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 74300000,
+      "period_start": "2014-08-01",
+      "period_end": "2015-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 74900000,
+      "period_start": "2015-08-01",
+      "period_end": "2016-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 74900000,
+      "period_start": "2015-08-01",
+      "period_end": "2016-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 74900000,
+      "period_start": "2015-08-01",
+      "period_end": "2016-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 75200000,
+      "period_start": "2016-08-01",
+      "period_end": "2017-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 75200000,
+      "period_start": "2016-08-01",
+      "period_end": "2017-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 75200000,
+      "period_start": "2016-08-01",
+      "period_end": "2017-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 76700000,
+      "period_start": "2017-08-01",
+      "period_end": "2018-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 76700000,
+      "period_start": "2017-08-01",
+      "period_end": "2018-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 76700000,
+      "period_start": "2017-08-01",
+      "period_end": "2018-07-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018",
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 81100000,
+      "period_start": "2018-08-01",
+      "period_end": "2019-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 81100000,
+      "period_start": "2018-08-01",
+      "period_end": "2019-07-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 81100000,
+      "period_start": "2018-08-01",
+      "period_end": "2019-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2019",
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 87600000,
+      "period_start": "2019-08-01",
+      "period_end": "2020-07-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 87600000,
+      "period_start": "2019-08-01",
+      "period_end": "2020-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 87600000,
+      "period_start": "2019-08-01",
+      "period_end": "2020-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2020",
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 95300000,
+      "period_start": "2020-08-01",
+      "period_end": "2021-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 95300000,
+      "period_start": "2020-08-01",
+      "period_end": "2021-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 95300000,
+      "period_start": "2020-08-01",
+      "period_end": "2021-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2021",
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 93800000,
+      "period_start": "2021-08-01",
+      "period_end": "2022-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 93800000,
+      "period_start": "2021-08-01",
+      "period_end": "2022-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 93800000,
+      "period_start": "2021-08-01",
+      "period_end": "2022-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2022",
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 92300000,
+      "period_start": "2022-08-01",
+      "period_end": "2023-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 92300000,
+      "period_start": "2022-08-01",
+      "period_end": "2023-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 92300000,
+      "period_start": "2022-08-01",
+      "period_end": "2023-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2023",
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 98400000,
+      "period_start": "2023-08-01",
+      "period_end": "2024-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 98400000,
+      "period_start": "2023-08-01",
+      "period_end": "2024-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 98400000,
+      "period_start": "2023-08-01",
+      "period_end": "2024-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 99500000,
+      "period_start": "2024-08-01",
+      "period_end": "2025-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 99500000,
+      "period_start": "2024-08-01",
+      "period_end": "2025-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2025",
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    },
+    {
+      "field": "depreciation_amortization",
+      "concept": "DepreciationDepletionAndAmortization",
+      "value": 106000000,
+      "period_start": "2025-08-01",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2026",
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    }
+  ],
+  "allowance_doubtful_accounts": [
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6315000,
+      "period_start": null,
+      "period_end": "2010-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010Q2I",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6908000,
+      "period_start": null,
+      "period_end": "2011-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6908000,
+      "period_start": null,
+      "period_end": "2011-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011Q2I",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6418000,
+      "period_start": null,
+      "period_end": "2012-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6418000,
+      "period_start": null,
+      "period_end": "2012-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012Q2I",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 7040000,
+      "period_start": null,
+      "period_end": "2013-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 7040000,
+      "period_start": null,
+      "period_end": "2013-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013Q2I",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6763000,
+      "period_start": null,
+      "period_end": "2014-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6763000,
+      "period_start": null,
+      "period_end": "2014-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014Q2I",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6747000,
+      "period_start": null,
+      "period_end": "2015-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6700000,
+      "period_start": null,
+      "period_end": "2015-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015Q2I",
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 8600000,
+      "period_start": null,
+      "period_end": "2016-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 8600000,
+      "period_start": null,
+      "period_end": "2016-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016Q2I",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 8700000,
+      "period_start": null,
+      "period_end": "2017-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 8700000,
+      "period_start": null,
+      "period_end": "2017-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017Q2I",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 8300000,
+      "period_start": null,
+      "period_end": "2018-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 8300000,
+      "period_start": null,
+      "period_end": "2018-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018Q2I",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 4800000,
+      "period_start": null,
+      "period_end": "2019-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 4800000,
+      "period_start": null,
+      "period_end": "2019-07-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2019Q2I",
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6200000,
+      "period_start": null,
+      "period_end": "2020-07-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6200000,
+      "period_start": null,
+      "period_end": "2020-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2020Q2I",
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 7000000,
+      "period_start": null,
+      "period_end": "2021-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 7000000,
+      "period_start": null,
+      "period_end": "2021-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2021Q2I",
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 7600000,
+      "period_start": null,
+      "period_end": "2022-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 7600000,
+      "period_start": null,
+      "period_end": "2022-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2022Q2I",
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 8300000,
+      "period_start": null,
+      "period_end": "2023-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 8300000,
+      "period_start": null,
+      "period_end": "2023-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2023Q2I",
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6300000,
+      "period_start": null,
+      "period_end": "2024-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 6300000,
+      "period_start": null,
+      "period_end": "2024-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024Q2I",
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 2900000,
+      "period_start": null,
+      "period_end": "2025-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 2900000,
+      "period_start": null,
+      "period_end": "2025-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2025Q2I",
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    },
+    {
+      "field": "allowance_doubtful_accounts",
+      "concept": "AllowanceForDoubtfulAccountsReceivableCurrent",
+      "value": 3200000,
+      "period_start": null,
+      "period_end": "2026-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2026Q2I",
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    }
+  ],
+  "ar_balance": [
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 358917000,
+      "period_start": null,
+      "period_end": "2010-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010Q2I",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 445700000,
+      "period_start": null,
+      "period_end": "2011-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 445700000,
+      "period_start": null,
+      "period_end": "2011-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011Q2I",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 438796000,
+      "period_start": null,
+      "period_end": "2012-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 438796000,
+      "period_start": null,
+      "period_end": "2012-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012Q2I",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 430766000,
+      "period_start": null,
+      "period_end": "2013-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 430766000,
+      "period_start": null,
+      "period_end": "2013-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013Q2I",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 474157000,
+      "period_start": null,
+      "period_end": "2014-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 474157000,
+      "period_start": null,
+      "period_end": "2014-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014Q2I",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 460027000,
+      "period_start": null,
+      "period_end": "2015-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 460000000,
+      "period_start": null,
+      "period_end": "2015-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015Q2I",
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 452400000,
+      "period_start": null,
+      "period_end": "2016-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 452400000,
+      "period_start": null,
+      "period_end": "2016-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016Q2I",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 497700000,
+      "period_start": null,
+      "period_end": "2017-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 497700000,
+      "period_start": null,
+      "period_end": "2017-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017Q2I",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 534600000,
+      "period_start": null,
+      "period_end": "2018-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 534600000,
+      "period_start": null,
+      "period_end": "2018-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018Q2I",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 529500000,
+      "period_start": null,
+      "period_end": "2019-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 529500000,
+      "period_start": null,
+      "period_end": "2019-07-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2019Q2I",
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 455300000,
+      "period_start": null,
+      "period_end": "2020-07-31",
+      "filed": "2020-09-25",
+      "fiscal_year_of_filing": 2020,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-20-000046",
+      "source_transaction_ids": [
+        "0000029644-20-000046"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 455300000,
+      "period_start": null,
+      "period_end": "2020-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2020Q2I",
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 552700000,
+      "period_start": null,
+      "period_end": "2021-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 552700000,
+      "period_start": null,
+      "period_end": "2021-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2021Q2I",
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 616600000,
+      "period_start": null,
+      "period_end": "2022-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 616600000,
+      "period_start": null,
+      "period_end": "2022-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2022Q2I",
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 599700000,
+      "period_start": null,
+      "period_end": "2023-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 599700000,
+      "period_start": null,
+      "period_end": "2023-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2023Q2I",
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 629700000,
+      "period_start": null,
+      "period_end": "2024-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 629700000,
+      "period_start": null,
+      "period_end": "2024-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024Q2I",
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 662200000,
+      "period_start": null,
+      "period_end": "2025-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 662200000,
+      "period_start": null,
+      "period_end": "2025-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2025Q2I",
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    },
+    {
+      "field": "ar_balance",
+      "concept": "AccountsReceivableNetCurrent",
+      "value": 758100000,
+      "period_start": null,
+      "period_end": "2026-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2026Q2I",
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    }
+  ],
+  "net_income": [
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 131907000,
+      "period_start": "2008-08-01",
+      "period_end": "2009-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2009",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 34569000,
+      "period_start": "2009-08-01",
+      "period_end": "2009-10-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2009Q3",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 30966000,
+      "period_start": "2009-11-01",
+      "period_end": "2010-01-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2009Q4",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 49458000,
+      "period_start": "2010-02-01",
+      "period_end": "2010-04-30",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010Q1",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 166163000,
+      "period_start": "2009-08-01",
+      "period_end": "2010-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 166163000,
+      "period_start": "2009-08-01",
+      "period_end": "2010-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 51170000,
+      "period_start": "2010-05-01",
+      "period_end": "2010-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010Q2",
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 53134000,
+      "period_start": "2010-08-01",
+      "period_end": "2010-10-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 53134000,
+      "period_start": "2010-08-01",
+      "period_end": "2010-10-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010Q3",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 44579000,
+      "period_start": "2010-11-01",
+      "period_end": "2011-01-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 44579000,
+      "period_start": "2010-11-01",
+      "period_end": "2011-01-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2010Q4",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 61811000,
+      "period_start": "2011-02-01",
+      "period_end": "2011-04-30",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 61811000,
+      "period_start": "2011-02-01",
+      "period_end": "2011-04-30",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011Q1",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 225291000,
+      "period_start": "2010-08-01",
+      "period_end": "2011-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 225291000,
+      "period_start": "2010-08-01",
+      "period_end": "2011-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 225291000,
+      "period_start": "2010-08-01",
+      "period_end": "2011-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 65767000,
+      "period_start": "2011-05-01",
+      "period_end": "2011-07-31",
+      "filed": "2011-09-23",
+      "fiscal_year_of_filing": 2011,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-11-001630",
+      "source_transaction_ids": [
+        "0000897101-11-001630"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 65767000,
+      "period_start": "2011-05-01",
+      "period_end": "2011-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011Q2",
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 68553000,
+      "period_start": "2011-08-01",
+      "period_end": "2011-10-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 68553000,
+      "period_start": "2011-08-01",
+      "period_end": "2011-10-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011Q3",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 53821000,
+      "period_start": "2011-11-01",
+      "period_end": "2012-01-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 53821000,
+      "period_start": "2011-11-01",
+      "period_end": "2012-01-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2011Q4",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 70946000,
+      "period_start": "2012-02-01",
+      "period_end": "2012-04-30",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 70946000,
+      "period_start": "2012-02-01",
+      "period_end": "2012-04-30",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012Q1",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 264301000,
+      "period_start": "2011-08-01",
+      "period_end": "2012-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 264301000,
+      "period_start": "2011-08-01",
+      "period_end": "2012-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 264301000,
+      "period_start": "2011-08-01",
+      "period_end": "2012-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 70981000,
+      "period_start": "2012-05-01",
+      "period_end": "2012-07-31",
+      "filed": "2012-09-28",
+      "fiscal_year_of_filing": 2012,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-12-001641",
+      "source_transaction_ids": [
+        "0000897101-12-001641"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 70981000,
+      "period_start": "2012-05-01",
+      "period_end": "2012-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012Q2",
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 54113000,
+      "period_start": "2012-08-01",
+      "period_end": "2012-10-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 54113000,
+      "period_start": "2012-08-01",
+      "period_end": "2012-10-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012Q3",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 50813000,
+      "period_start": "2012-11-01",
+      "period_end": "2013-01-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 50813000,
+      "period_start": "2012-11-01",
+      "period_end": "2013-01-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2012Q4",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 69842000,
+      "period_start": "2013-02-01",
+      "period_end": "2013-04-30",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 69842000,
+      "period_start": "2013-02-01",
+      "period_end": "2013-04-30",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013Q1",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 247377000,
+      "period_start": "2012-08-01",
+      "period_end": "2013-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 247377000,
+      "period_start": "2012-08-01",
+      "period_end": "2013-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 247377000,
+      "period_start": "2012-08-01",
+      "period_end": "2013-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 72609000,
+      "period_start": "2013-05-01",
+      "period_end": "2013-07-31",
+      "filed": "2013-09-27",
+      "fiscal_year_of_filing": 2013,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-13-001411",
+      "source_transaction_ids": [
+        "0000897101-13-001411"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 72609000,
+      "period_start": "2013-05-01",
+      "period_end": "2013-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013Q2",
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 61592000,
+      "period_start": "2013-08-01",
+      "period_end": "2013-10-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 61592000,
+      "period_start": "2013-08-01",
+      "period_end": "2013-10-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013Q3",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 58340000,
+      "period_start": "2013-11-01",
+      "period_end": "2014-01-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 58340000,
+      "period_start": "2013-11-01",
+      "period_end": "2014-01-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2013Q4",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 67336000,
+      "period_start": "2014-02-01",
+      "period_end": "2014-04-30",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 67336000,
+      "period_start": "2014-02-01",
+      "period_end": "2014-04-30",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014Q1",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 260224000,
+      "period_start": "2013-08-01",
+      "period_end": "2014-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 260224000,
+      "period_start": "2013-08-01",
+      "period_end": "2014-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 260200000,
+      "period_start": "2013-08-01",
+      "period_end": "2014-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014",
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 72956000,
+      "period_start": "2014-05-01",
+      "period_end": "2014-07-31",
+      "filed": "2014-09-26",
+      "fiscal_year_of_filing": 2014,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-14-001376",
+      "source_transaction_ids": [
+        "0000897101-14-001376"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 72956000,
+      "period_start": "2014-05-01",
+      "period_end": "2014-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014Q2",
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 55947000,
+      "period_start": "2014-08-01",
+      "period_end": "2014-10-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 55900000,
+      "period_start": "2014-08-01",
+      "period_end": "2014-10-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 38500000,
+      "period_start": "2014-08-01",
+      "period_end": "2014-10-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014Q3",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 47955000,
+      "period_start": "2014-11-01",
+      "period_end": "2015-01-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 48000000,
+      "period_start": "2014-11-01",
+      "period_end": "2015-01-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 38000000,
+      "period_start": "2014-11-01",
+      "period_end": "2015-01-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2014Q4",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 47776000,
+      "period_start": "2015-02-01",
+      "period_end": "2015-04-30",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 47800000,
+      "period_start": "2015-02-01",
+      "period_end": "2015-04-30",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 54800000,
+      "period_start": "2015-02-01",
+      "period_end": "2015-04-30",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015Q1",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 208111000,
+      "period_start": "2014-08-01",
+      "period_end": "2015-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 208100000,
+      "period_start": "2014-08-01",
+      "period_end": "2015-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 208100000,
+      "period_start": "2014-08-01",
+      "period_end": "2015-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 56433000,
+      "period_start": "2015-05-01",
+      "period_end": "2015-07-31",
+      "filed": "2015-11-10",
+      "fiscal_year_of_filing": 2015,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000897101-15-001507",
+      "source_transaction_ids": [
+        "0000897101-15-001507"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 56400000,
+      "period_start": "2015-05-01",
+      "period_end": "2015-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 59500000,
+      "period_start": "2015-05-01",
+      "period_end": "2015-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015Q2",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 38500000,
+      "period_start": "2015-08-01",
+      "period_end": "2015-10-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 58000000,
+      "period_start": "2015-08-01",
+      "period_end": "2015-10-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015Q3",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 38000000,
+      "period_start": "2015-11-01",
+      "period_end": "2016-01-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 46500000,
+      "period_start": "2015-11-01",
+      "period_end": "2016-01-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2015Q4",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 54800000,
+      "period_start": "2016-02-01",
+      "period_end": "2016-04-30",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 60100000,
+      "period_start": "2016-02-01",
+      "period_end": "2016-04-30",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016Q1",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 190800000,
+      "period_start": "2015-08-01",
+      "period_end": "2016-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 190800000,
+      "period_start": "2015-08-01",
+      "period_end": "2016-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 190800000,
+      "period_start": "2015-08-01",
+      "period_end": "2016-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 59500000,
+      "period_start": "2016-05-01",
+      "period_end": "2016-07-31",
+      "filed": "2016-09-23",
+      "fiscal_year_of_filing": 2016,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0001628280-16-019746",
+      "source_transaction_ids": [
+        "0001628280-16-019746"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 68200000,
+      "period_start": "2016-05-01",
+      "period_end": "2016-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016Q2",
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 58000000,
+      "period_start": "2016-08-01",
+      "period_end": "2016-10-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016Q3",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 46500000,
+      "period_start": "2016-11-01",
+      "period_end": "2017-01-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2016Q4",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 60100000,
+      "period_start": "2017-02-01",
+      "period_end": "2017-04-30",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017Q1",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 232800000,
+      "period_start": "2016-08-01",
+      "period_end": "2017-07-31",
+      "filed": "2017-09-22",
+      "fiscal_year_of_filing": 2017,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-17-000019",
+      "source_transaction_ids": [
+        "0000029644-17-000019"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 232800000,
+      "period_start": "2016-08-01",
+      "period_end": "2017-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 232800000,
+      "period_start": "2016-08-01",
+      "period_end": "2017-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 68200000,
+      "period_start": "2017-05-01",
+      "period_end": "2017-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017Q2",
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 60900000,
+      "period_start": "2017-08-01",
+      "period_end": "2017-10-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 60900000,
+      "period_start": "2017-08-01",
+      "period_end": "2017-10-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017Q3",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": -52900000,
+      "period_start": "2017-11-01",
+      "period_end": "2018-01-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": -52900000,
+      "period_start": "2017-11-01",
+      "period_end": "2018-01-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2017Q4",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 69900000,
+      "period_start": "2018-02-01",
+      "period_end": "2018-04-30",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 69900000,
+      "period_start": "2018-02-01",
+      "period_end": "2018-04-30",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018Q1",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 180300000,
+      "period_start": "2017-08-01",
+      "period_end": "2018-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 180300000,
+      "period_start": "2017-08-01",
+      "period_end": "2018-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 102400000,
+      "period_start": "2018-05-01",
+      "period_end": "2018-07-31",
+      "filed": "2018-10-01",
+      "fiscal_year_of_filing": 2018,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-18-000024",
+      "source_transaction_ids": [
+        "0000029644-18-000024"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 102400000,
+      "period_start": "2018-05-01",
+      "period_end": "2018-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2018Q2",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 73800000,
+      "period_start": "2018-08-01",
+      "period_end": "2018-10-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 60100000,
+      "period_start": "2018-11-01",
+      "period_end": "2019-01-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 75200000,
+      "period_start": "2019-02-01",
+      "period_end": "2019-04-30",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 267200000,
+      "period_start": "2018-08-01",
+      "period_end": "2019-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 267200000,
+      "period_start": "2018-08-01",
+      "period_end": "2019-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2019",
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 58000000,
+      "period_start": "2019-05-01",
+      "period_end": "2019-07-31",
+      "filed": "2019-09-27",
+      "fiscal_year_of_filing": 2019,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2019Q2",
+      "accession_number": "0000029644-19-000023",
+      "source_transaction_ids": [
+        "0000029644-19-000023"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 257000000,
+      "period_start": "2019-08-01",
+      "period_end": "2020-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 257000000,
+      "period_start": "2019-08-01",
+      "period_end": "2020-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2020",
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 286900000,
+      "period_start": "2020-08-01",
+      "period_end": "2021-07-31",
+      "filed": "2021-09-24",
+      "fiscal_year_of_filing": 2021,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-21-000029",
+      "source_transaction_ids": [
+        "0000029644-21-000029"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 286900000,
+      "period_start": "2020-08-01",
+      "period_end": "2021-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 286900000,
+      "period_start": "2020-08-01",
+      "period_end": "2021-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2021",
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 332800000,
+      "period_start": "2021-08-01",
+      "period_end": "2022-07-31",
+      "filed": "2022-09-23",
+      "fiscal_year_of_filing": 2022,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-22-000089",
+      "source_transaction_ids": [
+        "0000029644-22-000089"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 332800000,
+      "period_start": "2021-08-01",
+      "period_end": "2022-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 332800000,
+      "period_start": "2021-08-01",
+      "period_end": "2022-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 358800000,
+      "period_start": "2022-08-01",
+      "period_end": "2023-07-31",
+      "filed": "2023-09-22",
+      "fiscal_year_of_filing": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-23-000085",
+      "source_transaction_ids": [
+        "0000029644-23-000085"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 358800000,
+      "period_start": "2022-08-01",
+      "period_end": "2023-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 358800000,
+      "period_start": "2022-08-01",
+      "period_end": "2023-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 414000000,
+      "period_start": "2023-08-01",
+      "period_end": "2024-07-31",
+      "filed": "2024-09-27",
+      "fiscal_year_of_filing": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-24-000111",
+      "source_transaction_ids": [
+        "0000029644-24-000111"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 414000000,
+      "period_start": "2023-08-01",
+      "period_end": "2024-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 414000000,
+      "period_start": "2023-08-01",
+      "period_end": "2024-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 367000000,
+      "period_start": "2024-08-01",
+      "period_end": "2025-07-31",
+      "filed": "2025-09-26",
+      "fiscal_year_of_filing": 2025,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-25-000098",
+      "source_transaction_ids": [
+        "0000029644-25-000098"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 367000000,
+      "period_start": "2024-08-01",
+      "period_end": "2025-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    },
+    {
+      "field": "net_income",
+      "concept": "NetIncomeLoss",
+      "value": 453800000,
+      "period_start": "2025-08-01",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-25",
+      "fiscal_year_of_filing": 2026,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "accession_number": "0000029644-26-000085",
+      "source_transaction_ids": [
+        "0000029644-26-000085"
+      ]
+    }
+  ],
+  "_sec_entity_name": "Donaldson Company, Inc."
+}

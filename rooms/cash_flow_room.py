@@ -1,129 +1,189 @@
-"""cash_flow_room.py — Relay lens: SMB cash-runway/risk brief.
+"""cash_flow_room.py — SMB cash-runway/risk brief for Relay lens.
 
-Reads transactions.csv (+ businesses.csv for display names), calls
-cash_kpis + anomaly_detection, assembles a fact list, and calls
-skills/narrate.py. Audience is non-technical (docs/PERSONAS.md §2) — plain
-tone, 3-4 KPIs that matter for underwriting, each citeable.
+Entry point that reads transactions.csv, calls cash KPI skills, assembles
+facts, and produces a plain-English brief for a non-technical SMB
+underwriter or risk analyst.
+
+Audience: Relay persona (§2 in PERSONAS.md) — credit/risk underwriter
+checking if an SMB is about to run out of cash, has concentrated revenue,
+or shows anomalous transaction patterns.
 
 Usage:
-    python3 rooms/cash_flow_room.py                 # all 25 businesses
-    python3 rooms/cash_flow_room.py biz_07           # one business
+    python3 rooms/cash_flow_room.py [--business biz_07]
+
+Output: A short plain-English brief with KPIs and their source IDs, zero
+uncited numbers.
 """
 from __future__ import annotations
 
+import argparse
 import csv
-import json
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "skills"))
 
-import anomaly_detection  # noqa: E402
-import cash_kpis  # noqa: E402
-from narrate import Fact, narrate  # noqa: E402
-
-BUSINESSES_PATH = ROOT / "data" / "businesses.csv"
-OUT_DIR = ROOT / "out"
+import cash_kpis
+import anomaly_detection
+import narrate
 
 
-def load_business_names() -> dict[str, str]:
-    with BUSINESSES_PATH.open(newline="") as f:
-        rows = list(csv.DictReader(f))
-    return {r["business_id"]: r["business_name"] for r in rows}
+def load_businesses(path: Path = ROOT / "data" / "businesses.csv") -> dict[str, dict]:
+    """Load business names and metadata."""
+    by_id = {}
+    with path.open(newline="") as f:
+        for row in csv.DictReader(f):
+            by_id[row["business_id"]] = row
+    return by_id
 
 
-def _pct_fact(label: str, result: dict, note: str | None = None) -> Fact:
-    value = result.get("value")
-    return Fact(label=label, value=round(value * 100, 1) if value is not None else None,
-                source_transaction_ids=result.get("source_transaction_ids", []),
-                note=note or result.get("flag") or result.get("reason"))
+def run_cash_flow_room(business_id: str) -> dict:
+    """Analyze cash flow & risk KPIs for a given business.
 
+    Returns:
+        {
+            "business_id": str,
+            "business_name": str,
+            "narrative": str,
+            "validated": bool,
+            "issues": list[str]
+        }
+    """
+    # Load data
+    txns = cash_kpis.load_transactions()
+    businesses = load_businesses()
 
-def build_facts(transactions: list[dict], business_id: str) -> list[Fact]:
-    """Calls cash_kpis + anomaly_detection and normalizes their outputs into
-    the Fact shape narrate.py expects. This function is the one place the
-    "code computes and cites" contract gets enforced for this room."""
-    runway = cash_kpis.runway_months(transactions, business_id)
-    burn = cash_kpis.burn_rate(transactions, business_id)
-    conc = cash_kpis.customer_concentration(transactions, business_id)
-    od = cash_kpis.overdraft_risk(transactions, business_id)
-    rnc = anomaly_detection.round_number_cluster(transactions, business_id)
-    bd = anomaly_detection.benford_deviation(transactions, business_id, category="misc_expense")
+    business = businesses.get(business_id, {})
+    business_name = business.get("business_name", business_id)
+    industry = business.get("industry", "Unknown")
 
-    facts = [
-        Fact(label="Months of cash runway", value=runway.get("value"),
-             source_transaction_ids=runway.get("source_transaction_ids", []),
-             note=runway.get("flag") or runway.get("reason")),
-        Fact(label="Trailing 3-month average monthly cash flow", value=burn.get("value"),
-             source_transaction_ids=burn.get("source_transaction_ids", []),
-             note=burn.get("reason")),
-        _pct_fact("Revenue share from top customer", conc),
-        Fact(label="Lowest cumulative cash balance", value=od.get("lowest_balance"),
-             source_transaction_ids=od.get("source_transaction_ids", []),
-             note=od.get("flag")),
-        Fact(label="Round-number outflow transaction count", value=rnc.get("round_number_count"),
-             # When the count is 0 there are no matching rows to cite, but
-             # the fact still needs a citation per narrate.py's "non-null
-             # value needs a source" rule — cite the full outflow scope that
-             # was checked instead of the (empty) match set.
-             source_transaction_ids=rnc.get("source_transaction_ids") or
-             [r["transaction_id"] for r in cash_kpis._for_business(transactions, business_id) if r["amount"] < 0],
-             note=rnc.get("flag")),
-        Fact(label="Benford deviation score (misc. expenses)", value=bd.get("value"),
-             source_transaction_ids=bd.get("source_transaction_ids", []),
-             note=bd.get("reason")),
-    ]
-    return facts
+    # Collect facts from cash KPI skills
+    facts = []
 
+    # 1. Runway months (primary risk signal)
+    runtime = cash_kpis.runway_months(txns, business_id)
+    if runtime.get("value") is not None:
+        label = f"Cash runway ({runtime.get('as_of_period', 'latest')})"
+        facts.append({
+            "label": label,
+            "value": runtime.get("value"),
+            "flag": runtime.get("flag"),
+            "source_transaction_ids": runtime.get("source_transaction_ids", []),
+        })
+    elif runtime.get("flag") == "cash_negative":
+        facts.append({
+            "label": "Cash position",
+            "value": runtime.get("current_balance"),
+            "flag": "cash_negative",
+            "source_transaction_ids": runtime.get("source_transaction_ids", []),
+        })
+    # Note: if value is None and flag is not cash_negative, the business has
+    # infinite runway (cash-flow positive). We'll include burn rate instead.
 
-def run_for_business(transactions: list[dict], business_id: str, display_name: str,
-                      backend: str = "mock") -> dict:
-    facts = build_facts(transactions, business_id)
-    result = narrate(facts, audience="SMB credit/risk underwriter",
-                      room_label=f"Cash Flow Room — {display_name} ({business_id})",
-                      backend=backend)
+    # 2. Burn rate (context for runway)
+    burn = cash_kpis.burn_rate(txns, business_id)
+    if burn.get("value") is not None:
+        facts.append({
+            "label": f"Trailing 3-month burn rate",
+            "value": burn.get("value"),
+            "source_transaction_ids": burn.get("source_transaction_ids", []),
+        })
+
+    # 3. Customer concentration (revenue risk)
+    conc = cash_kpis.customer_concentration(txns, business_id)
+    if conc.get("value") is not None:
+        facts.append({
+            "label": f"Top customer share of revenue",
+            "value": conc.get("value"),
+            "flag": conc.get("flag"),
+            "top_customer": conc.get("top_customer"),
+            "source_transaction_ids": conc.get("source_transaction_ids", []),
+        })
+
+    # 4. Overdraft risk (liquidity stress)
+    overdraft = cash_kpis.overdraft_risk(txns, business_id)
+    if overdraft.get("lowest_balance") is not None:
+        facts.append({
+            "label": f"Lowest cash balance ({overdraft.get('lowest_balance_period', 'N/A')})",
+            "value": overdraft.get("lowest_balance"),
+            "flag": overdraft.get("flag"),
+            "source_transaction_ids": overdraft.get("source_transaction_ids", []),
+        })
+
+    # 5. Round-number anomalies (fraud/risk signal)
+    round_num = anomaly_detection.round_number_cluster(txns, business_id)
+    if round_num.get("round_number_count", 0) > 0:
+        facts.append({
+            "label": "Suspicious round-number ($500 multiples) expenses",
+            "value": round_num.get("round_number_count"),
+            "flag": round_num.get("flag"),
+            "source_transaction_ids": round_num.get("source_transaction_ids", []),
+        })
+
+    # 6. Benford anomaly (secondary, low-confidence anomaly signal)
+    benford = anomaly_detection.benford_deviation(txns, business_id)
+    if benford.get("value") is not None and benford.get("value") > 0.3:
+        facts.append({
+            "label": "Benford leading-digit anomaly score",
+            "value": benford.get("value"),
+            "source_transaction_ids": benford.get("source_transaction_ids", []),
+        })
+
+    # Call narrate to produce the brief
+    subject = f"Cash flow risk assessment — {business_name} ({industry})"
+    result = narrate.narrate(subject, facts, backend="mock")
+
     return {
         "business_id": business_id,
-        "business_name": display_name,
-        "facts": [vars(f) for f in facts],
-        **result,
+        "business_name": business_name,
+        "industry": industry,
+        "narrative": result.get("narrative"),
+        "validated": result.get("validated"),
+        "issues": result.get("issues", []),
     }
 
 
-def main(business_ids: list[str] | None = None, backend: str = "mock") -> None:
-    transactions = cash_kpis.load_transactions()
-    names = load_business_names()
-    if business_ids is None:
-        business_ids = sorted(names)
+def main():
+    parser = argparse.ArgumentParser(
+        description="Generate cash-flow risk brief for an SMB.",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=(
+            "Example:\n"
+            "  python3 rooms/cash_flow_room.py --business biz_07\n"
+            "  python3 rooms/cash_flow_room.py --business biz_11\n"
+        ),
+    )
+    parser.add_argument(
+        "--business",
+        default="biz_07",
+        help="Business ID to analyze (default: biz_07, an interesting declining-revenue case)",
+    )
+    args = parser.parse_args()
 
-    OUT_DIR.mkdir(exist_ok=True)
-    reports = []
-    for biz_id in business_ids:
-        display_name = names.get(biz_id, biz_id)
-        reports.append(run_for_business(transactions, biz_id, display_name, backend=backend))
+    # Run analysis
+    result = run_cash_flow_room(args.business)
 
-    out_path = OUT_DIR / "cash_flow_room_report.json"
-    out_path.write_text(json.dumps(reports, indent=2))
+    # Print report
+    print("\n" + "=" * 70)
+    print("CASH FLOW RISK BRIEF")
+    print("=" * 70)
+    print(f"\nBusiness: {result['business_name']} ({result['industry']})")
+    print(f"ID: {result['business_id']}")
+    print("\n" + "-" * 70)
+    print("ASSESSMENT")
+    print("-" * 70)
+    print(f"\n{result['narrative']}\n")
 
-    txt_lines = []
-    for r in reports:
-        txt_lines.append(f"=== {r['business_name']} ({r['business_id']}) ===")
-        txt_lines.append(r["narrative"])
-        txt_lines.append(f"[validation ok: {r['ok']}]")
-        txt_lines.append("")
-    txt_path = OUT_DIR / "cash_flow_room_report.txt"
-    txt_path.write_text("\n".join(txt_lines))
+    if not result["validated"]:
+        print("\n[WARNING] Narrative contains uncited numbers or invalid citations:")
+        for issue in result["issues"]:
+            print(f"  - {issue}")
 
-    all_ok = all(r["ok"] for r in reports)
-    print(f"Wrote {len(reports)} brief(s) to {out_path} and {txt_path}")
-    print(f"All reports passed citation validation: {all_ok}")
-    if not all_ok:
-        failing = [r["business_id"] for r in reports if not r["ok"]]
-        print(f"FAILING: {failing}")
+    print("\n" + "=" * 70 + "\n")
+
+    return 0 if result["validated"] else 1
 
 
 if __name__ == "__main__":
-    args = sys.argv[1:]
-    ids = args if args else None
-    main(ids)
+    sys.exit(main())

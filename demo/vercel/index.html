@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Ledger Room — live demo</title>
+<style>
+  :root {
+    --bg: #0f1115; --card: #171a21; --card2: #1d212b; --fg: #eef0f3;
+    --muted: #8b93a3; --border: #2b303b; --accent: #3d7bf0; --accent2: #27c08a;
+    --warn: #e5a53d;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    margin: 0; padding: 0; background: var(--bg); color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px; -webkit-text-size-adjust: 100%;
+  }
+  .wrap { padding: 16px 14px 32px 14px; max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; margin: 0 0 3px 0; font-weight: 800; letter-spacing: -0.01em; }
+  .subtitle { color: var(--muted); font-size: 0.86rem; margin-bottom: 12px; line-height: 1.4; }
+  .synthetic-note {
+    font-size: 0.78rem; color: var(--warn); border: 1px solid #4a3a1f; border-radius: 8px;
+    padding: 8px 12px; margin-bottom: 16px; background: #1f1708; line-height: 1.4;
+  }
+  /* hide all radios -- pure CSS tab/pill switcher, no JS anywhere */
+  input[type=radio] { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
+
+  .lens-tabs { display: flex; gap: 6px; margin-bottom: 0; }
+  .lens-tabs label {
+    flex: 1; cursor: pointer; padding: 10px 8px; border-radius: 10px 10px 0 0;
+    border: 1px solid var(--border); border-bottom: none;
+    background: var(--card); color: var(--muted);
+    font-size: 0.82rem; font-weight: 700; text-align: center; line-height: 1.3;
+    display: block; user-select: none;
+  }
+  .lens-tabs label small { display: block; font-weight: 500; opacity: 0.75; font-size: 0.7rem; margin-top: 1px; }
+  #lens-cash:checked ~ .lens-tabs label[for="lens-cash"],
+  #lens-filing:checked ~ .lens-tabs label[for="lens-filing"],
+  #lens-pricing:checked ~ .lens-tabs label[for="lens-pricing"] {
+    color: #fff; background: var(--card2); border-color: var(--accent);
+  }
+
+  .panel {
+    border: 1px solid var(--border); border-radius: 0 0 12px 12px;
+    background: var(--card2); padding: 16px 14px; margin-bottom: 18px;
+    display: none;
+  }
+  #lens-cash:checked ~ .panel-cash { display: block; }
+  #lens-filing:checked ~ .panel-filing { display: block; }
+  #lens-pricing:checked ~ .panel-pricing { display: block; }
+
+  .persona-line { font-size: 0.82rem; color: var(--muted); margin-bottom: 12px; line-height: 1.4; }
+  .biz-picker { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
+  .biz-picker label {
+    cursor: pointer; font-size: 0.8rem; padding: 7px 13px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--card); color: var(--fg); font-weight: 600;
+    display: inline-block; user-select: none;
+  }
+  .biz-card { display: none; }
+
+  /* cash room business switching */
+  #cb-07:checked ~ .biz-picker label[for="cb-07"],
+  #cb-22:checked ~ .biz-picker label[for="cb-22"],
+  #cb-03:checked ~ .biz-picker label[for="cb-03"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  #cb-07:checked ~ .biz-card.c07,
+  #cb-22:checked ~ .biz-card.c22,
+  #cb-03:checked ~ .biz-card.c03 { display: block; }
+
+  /* filing room business switching */
+  #fb-03:checked ~ .biz-picker label[for="fb-03"],
+  #fb-07:checked ~ .biz-picker label[for="fb-07"],
+  #fb-22:checked ~ .biz-picker label[for="fb-22"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  #fb-03:checked ~ .biz-card.f03,
+  #fb-07:checked ~ .biz-card.f07,
+  #fb-22:checked ~ .biz-card.f22 { display: block; }
+
+  /* pricing room business switching */
+  #pb-11:checked ~ .biz-picker label[for="pb-11"],
+  #pb-03:checked ~ .biz-picker label[for="pb-03"],
+  #pb-13:checked ~ .biz-picker label[for="pb-13"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  #pb-11:checked ~ .biz-card.p11,
+  #pb-03:checked ~ .biz-card.p03,
+  #pb-13:checked ~ .biz-card.p13 { display: block; }
+
+  .tier-badge {
+    display: inline-block; font-weight: 800; font-size: 0.95rem; padding: 6px 14px;
+    border-radius: 999px; margin-bottom: 10px;
+  }
+  .tier-c { background: #3a1b1b; color: #ef6b6b; border: 1px solid #5a2a2a; }
+  .tier-b { background: #3a301b; color: var(--warn); border: 1px solid #5a4a2a; }
+  .tier-a { background: #16321f; color: var(--accent2); border: 1px solid #244a33; }
+  .flags-line { font-size: 0.8rem; color: var(--muted); margin-bottom: 10px; }
+
+  .biz-name { font-weight: 800; font-size: 1.1rem; margin: 0 0 2px 0; }
+  .biz-name span { font-weight: 400; color: var(--muted); }
+  .biz-id { font-size: 0.78rem; color: var(--muted); margin-bottom: 12px; }
+  .kpi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  @media (max-width: 420px) { .kpi-grid { grid-template-columns: 1fr; } }
+  .kpi-card {
+    border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px;
+    background: var(--card);
+  }
+  .kpi-label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; }
+  .kpi-value { font-size: 1.15rem; font-weight: 800; margin: 3px 0 2px 0; color: #fff; }
+  .kpi-flag { font-size: 0.72rem; color: var(--warn); font-weight: 600; }
+  .narrative-box {
+    border-left: 3px solid var(--accent); padding: 10px 13px; font-size: 0.9rem;
+    line-height: 1.6; margin-bottom: 12px; background: var(--card); border-radius: 0 8px 8px 0;
+  }
+  .cite {
+    font-family: "SF Mono", Menlo, monospace; font-size: 0.68rem; background: var(--bg);
+    color: var(--accent2); padding: 2px 6px; border-radius: 5px; margin: 1px 2px;
+    border: 1px solid var(--border); display: inline-block; white-space: nowrap;
+  }
+  .integrity-line { font-size: 0.82rem; margin-bottom: 12px; font-weight: 600; }
+  .integrity-pass { color: var(--accent2); font-weight: 800; }
+  .validated-footer {
+    font-size: 0.76rem; color: var(--muted); border-top: 1px solid var(--border);
+    padding-top: 10px; margin-top: 6px; line-height: 1.4;
+  }
+  .validated-badge { color: var(--accent2); font-weight: 800; }
+  .how-it-works {
+    font-size: 0.86rem; line-height: 1.6; border: 1px solid var(--border);
+    border-radius: 12px; padding: 14px 15px; background: var(--card2);
+  }
+  .how-it-works-title { font-weight: 800; font-size: 0.95rem; margin-bottom: 10px; }
+  .how-it-works b { color: #fff; }
+  .stepline { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 9px; }
+  .stepnum {
+    flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; background: var(--accent);
+    color: #fff; font-size: 0.72rem; font-weight: 800; display: flex;
+    align-items: center; justify-content: center; margin-top: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Ledger Room</h1>
+  <div class="subtitle">Code computes and cites. The model only narrates facts it's handed — never raw rows, never a guessed number.</div>
+  <div class="synthetic-note">⚠ All data below is synthetic (25 generated SMBs, 12mo 2025). No real financial data. Career-portfolio artifact.</div>
+
+  <!-- lens switch (no JS: radio + :checked ~ sibling CSS) -->
+  <input type="radio" name="lens" id="lens-cash" checked>
+  <input type="radio" name="lens" id="lens-filing">
+  <input type="radio" name="lens" id="lens-pricing">
+  <div class="lens-tabs">
+    <label for="lens-cash">Cash Flow Room<small>SMB risk brief</small></label>
+    <label for="lens-filing">Filing Extraction Room<small>KPI extraction</small></label>
+    <label for="lens-pricing">Pricing Room<small>Risk-tier decision</small></label>
+  </div>
+
+  <div class="panel panel-cash">
+    <div class="persona-line">Audience: non-technical SMB underwriter. Question: "is this business running out of cash, and why?"</div>
+
+    <input type="radio" name="cashbiz" id="cb-07" checked>
+    <input type="radio" name="cashbiz" id="cb-22">
+    <input type="radio" name="cashbiz" id="cb-03">
+    <div class="biz-picker">
+      <label for="cb-07">biz_07</label>
+      <label for="cb-22">biz_22</label>
+      <label for="cb-03">biz_03</label>
+    </div>
+
+    <div class="biz-card c07">
+      <div class="biz-name">Lakeside Partners <span>(Consulting)</span></div>
+      <div class="biz-id">biz_07 &middot; flag: declining revenue</div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-label">Cash runway</div><div class="kpi-value">0 mo</div><div class="kpi-flag">cash_negative</div></div>
+        <div class="kpi-card"><div class="kpi-label">Burn rate (trailing)</div><div class="kpi-value">$12,152.62/mo</div></div>
+        <div class="kpi-card"><div class="kpi-label">Lowest balance</div><div class="kpi-value">-$62,146.81</div><div class="kpi-flag">overdraft_risk</div></div>
+      </div>
+      <div class="narrative-box">Lakeside Partners has 0 months of cash runway cash_negative (<span class="cite">biz_07_t00001</span> <span class="cite">biz_07_t00002</span> <span class="cite">biz_07_t00003</span>), with a trailing burn rate of $12152.62/month (<span class="cite">biz_07_t00094</span> <span class="cite">biz_07_t00095</span> <span class="cite">biz_07_t00096</span>), with lowest cash balance of $-62146.81 overdraft_risk (<span class="cite">biz_07_t00001</span> <span class="cite">biz_07_t00002</span> <span class="cite">biz_07_t00003</span>).</div>
+      <div class="validated-footer"><span class="validated-badge">✓ validated</span> — every number above traces to a source_transaction_id; validate_narrative() found zero uncited numbers, zero unknown citations.</div>
+    </div>
+
+    <div class="biz-card c22">
+      <div class="biz-name">Elm Street LLC <span>(Fitness Studio)</span></div>
+      <div class="biz-id">biz_22 &middot; flag: round-number anomaly</div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-label">Cash runway</div><div class="kpi-value">0 mo</div><div class="kpi-flag">cash_negative</div></div>
+        <div class="kpi-card"><div class="kpi-label">Burn rate (trailing)</div><div class="kpi-value">$13,967.69/mo</div></div>
+        <div class="kpi-card"><div class="kpi-label">Lowest balance</div><div class="kpi-value">-$140,888.61</div><div class="kpi-flag">overdraft_risk</div></div>
+        <div class="kpi-card"><div class="kpi-label">Round-number txns</div><div class="kpi-value">13</div><div class="kpi-flag">round_number_cluster</div></div>
+      </div>
+      <div class="narrative-box">Elm Street LLC has 0 months of cash runway cash_negative (<span class="cite">biz_22_t00001</span> <span class="cite">biz_22_t00002</span> <span class="cite">biz_22_t00003</span>), with a trailing burn rate of $13967.69/month (<span class="cite">biz_22_t00111</span> <span class="cite">biz_22_t00112</span> <span class="cite">biz_22_t00113</span>), with lowest cash balance of $-140888.61 overdraft_risk (<span class="cite">biz_22_t00001</span> <span class="cite">biz_22_t00002</span> <span class="cite">biz_22_t00003</span>). 13 suspicious round-number transactions round_number_cluster (<span class="cite">biz_22_t00006</span> <span class="cite">biz_22_t00010</span> <span class="cite">biz_22_t00017</span>), with Benford anomaly score 0.3880 (<span class="cite">biz_22_t00001</span> <span class="cite">biz_22_t00002</span> <span class="cite">biz_22_t00003</span>).</div>
+      <div class="validated-footer"><span class="validated-badge">✓ validated</span> — every number above traces to a source_transaction_id; validate_narrative() found zero uncited numbers, zero unknown citations.</div>
+    </div>
+
+    <div class="biz-card c03">
+      <div class="biz-name">Blue Harbor Inc. <span>(Specialty Clinic)</span></div>
+      <div class="biz-id">biz_03 &middot; flag: customer concentration</div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-label">Burn rate (trailing)</div><div class="kpi-value">$4,138.50/mo</div></div>
+        <div class="kpi-card"><div class="kpi-label">Lowest balance</div><div class="kpi-value">$2,717.35</div></div>
+        <div class="kpi-card"><div class="kpi-label">Benford anomaly score</div><div class="kpi-value">0.8502</div></div>
+      </div>
+      <div class="narrative-box">with a trailing burn rate of $4138.50/month (<span class="cite">biz_03_t00091</span> <span class="cite">biz_03_t00092</span> <span class="cite">biz_03_t00093</span>), with lowest cash balance of $2717.35 (<span class="cite">biz_03_t00001</span> <span class="cite">biz_03_t00002</span> <span class="cite">biz_03_t00003</span>), with Benford anomaly score 0.8502 (<span class="cite">biz_03_t00001</span> <span class="cite">biz_03_t00002</span> <span class="cite">biz_03_t00003</span>).</div>
+      <div class="validated-footer"><span class="validated-badge">✓ validated</span> — every number above traces to a source_transaction_id; validate_narrative() found zero uncited numbers, zero unknown citations.</div>
+    </div>
+  </div>
+
+  <div class="panel panel-filing">
+    <div class="persona-line">Audience: financial analyst. Question: "what did you extract, and can I trust it?"</div>
+
+    <input type="radio" name="filingbiz" id="fb-03" checked>
+    <input type="radio" name="filingbiz" id="fb-07">
+    <input type="radio" name="filingbiz" id="fb-22">
+    <div class="biz-picker">
+      <label for="fb-03">biz_03</label>
+      <label for="fb-07">biz_07</label>
+      <label for="fb-22">biz_22</label>
+    </div>
+
+    <div class="biz-card f03">
+      <div class="biz-name">Blue Harbor Inc. <span>(Specialty Clinic)</span></div>
+      <div class="biz-id">biz_03 &middot; flag: elevated bad debt</div>
+      <div class="integrity-line"><span class="integrity-pass">✓</span> Net Income Integrity: verified (0/300 rows flagged)</div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-label">Net margin (TTM)</div><div class="kpi-value">-35.05%</div></div>
+        <div class="kpi-card"><div class="kpi-label">Operating margin (TTM)</div><div class="kpi-value">-30.55%</div></div>
+        <div class="kpi-card"><div class="kpi-label">Gross margin (TTM)</div><div class="kpi-value">63.80%</div></div>
+        <div class="kpi-card"><div class="kpi-label">Bad debt rate (effective)</div><div class="kpi-value">4.50%</div><div class="kpi-flag">elevated_bad_debt</div></div>
+        <div class="kpi-card"><div class="kpi-label">Allowance / AR ratio</div><div class="kpi-value">6.75%</div></div>
+        <div class="kpi-card"><div class="kpi-label">Accrual revenue (12mo)</div><div class="kpi-value">$256,849.29</div></div>
+        <div class="kpi-card"><div class="kpi-label">Cash revenue (12mo)</div><div class="kpi-value">$279,150.62</div><div class="kpi-flag">gap vs accrual: recognition lag</div></div>
+      </div>
+      <div class="narrative-box">Net margin (TTM) of -35.05% (<span class="cite">biz_03_t00013</span> <span class="cite">biz_03_t00015</span> <span class="cite">biz_03_t00019</span>). Operating margin (TTM) of -30.55% (<span class="cite">biz_03_t00013</span> <span class="cite">biz_03_t00015</span> <span class="cite">biz_03_t00019</span>). Gross margin (TTM) of 63.80% (<span class="cite">biz_03_t00013</span> <span class="cite">biz_03_t00015</span> <span class="cite">biz_03_t00019</span>). Allowance for doubtful accounts at 6.75% of AR (<span class="cite">biz_03_fin_2025-01</span> <span class="cite">biz_03_fin_2025-02</span> <span class="cite">biz_03_fin_2025-03</span>). Total accrual revenue of $256,849.29 (<span class="cite">biz_03_t00003</span> <span class="cite">biz_03_t00005</span> <span class="cite">biz_03_t00007</span>), with total cash revenue of $279,150.62 (<span class="cite">biz_03_t00003</span> <span class="cite">biz_03_t00005</span> <span class="cite">biz_03_t00007</span>).</div>
+      <div class="validated-footer"><span class="validated-badge">✓ validated</span> — every margin, ratio and dollar figure above traces to a real row in monthly_financials.csv or transactions.csv; zero uncited numbers.</div>
+    </div>
+
+    <div class="biz-card f07">
+      <div class="biz-name">Lakeside Partners <span>(Consulting)</span></div>
+      <div class="biz-id">biz_07 &middot; flag: declining revenue</div>
+      <div class="integrity-line"><span class="integrity-pass">✓</span> Net Income Integrity: verified (0/300 rows flagged)</div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-label">Net margin (TTM)</div><div class="kpi-value">-66.33%</div></div>
+        <div class="kpi-card"><div class="kpi-label">Operating margin (TTM)</div><div class="kpi-value">-64.71%</div></div>
+        <div class="kpi-card"><div class="kpi-label">Gross margin (TTM)</div><div class="kpi-value">53.90%</div></div>
+        <div class="kpi-card"><div class="kpi-label">Bad debt rate (effective)</div><div class="kpi-value">1.20%</div></div>
+        <div class="kpi-card"><div class="kpi-label">Allowance / AR ratio</div><div class="kpi-value">1.80%</div></div>
+        <div class="kpi-card"><div class="kpi-label">D&amp;A total (9mo)</div><div class="kpi-value">$1,152.63</div></div>
+        <div class="kpi-card"><div class="kpi-label">Accrual revenue (12mo)</div><div class="kpi-value">$274,154.28</div></div>
+        <div class="kpi-card"><div class="kpi-label">Cash revenue (12mo)</div><div class="kpi-value">$274,154.28</div><div class="kpi-flag">no recognition lag this period</div></div>
+      </div>
+      <div class="narrative-box">Net margin (TTM) of -66.33% (<span class="cite">biz_07_t00005</span> <span class="cite">biz_07_t00007</span> <span class="cite">biz_07_t00011</span>). Operating margin (TTM) of -64.71% (<span class="cite">biz_07_t00005</span> <span class="cite">biz_07_t00007</span> <span class="cite">biz_07_t00011</span>). Gross margin (TTM) of 53.90% (<span class="cite">biz_07_t00005</span> <span class="cite">biz_07_t00007</span> <span class="cite">biz_07_t00011</span>). Allowance for doubtful accounts at 1.80% of AR (<span class="cite">biz_07_fin_2025-01</span> <span class="cite">biz_07_fin_2025-02</span> <span class="cite">biz_07_fin_2025-03</span>). D&amp;A of $1,152.63 (<span class="cite">biz_07_dep0001</span> <span class="cite">biz_07_dep0002</span> <span class="cite">biz_07_dep0003</span>). Total accrual revenue of $274,154.28 (<span class="cite">biz_07_t00005</span> <span class="cite">biz_07_t00007</span> <span class="cite">biz_07_t00011</span>), with total cash revenue of $274,154.28 (<span class="cite">biz_07_t00005</span> <span class="cite">biz_07_t00007</span> <span class="cite">biz_07_t00011</span>).</div>
+      <div class="validated-footer"><span class="validated-badge">✓ validated</span> — every margin, ratio and dollar figure above traces to a real row in monthly_financials.csv or transactions.csv; zero uncited numbers.</div>
+    </div>
+
+    <div class="biz-card f22">
+      <div class="biz-name">Elm Street LLC <span>(Fitness Studio)</span></div>
+      <div class="biz-id">biz_22 &middot; flag: margin &lt; -100%</div>
+      <div class="integrity-line"><span class="integrity-pass">✓</span> Net Income Integrity: verified (0/300 rows flagged)</div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-label">Net margin (TTM)</div><div class="kpi-value">-158.18%</div><div class="kpi-flag">net loss exceeds revenue</div></div>
+        <div class="kpi-card"><div class="kpi-label">Operating margin (TTM)</div><div class="kpi-value">-151.35%</div></div>
+        <div class="kpi-card"><div class="kpi-label">Gross margin (TTM)</div><div class="kpi-value">54.40%</div></div>
+        <div class="kpi-card"><div class="kpi-label">Bad debt rate (effective)</div><div class="kpi-value">4.00%</div><div class="kpi-flag">elevated_bad_debt</div></div>
+        <div class="kpi-card"><div class="kpi-label">Allowance / AR ratio</div><div class="kpi-value">6.00%</div></div>
+        <div class="kpi-card"><div class="kpi-label">D&amp;A total (9mo)</div><div class="kpi-value">$2,913.33</div></div>
+        <div class="kpi-card"><div class="kpi-label">Accrual revenue (12mo)</div><div class="kpi-value">$102,900.81</div></div>
+        <div class="kpi-card"><div class="kpi-label">Cash revenue (12mo)</div><div class="kpi-value">$102,900.81</div></div>
+      </div>
+      <div class="narrative-box">Net margin (TTM) of -158.18% (<span class="cite">biz_22_t00003</span> <span class="cite">biz_22_t00007</span> <span class="cite">biz_22_t00011</span>). Operating margin (TTM) of -151.35% (<span class="cite">biz_22_t00003</span> <span class="cite">biz_22_t00007</span> <span class="cite">biz_22_t00011</span>). Gross margin (TTM) of 54.40% (<span class="cite">biz_22_t00003</span> <span class="cite">biz_22_t00007</span> <span class="cite">biz_22_t00011</span>). Allowance for doubtful accounts at 6.00% of AR (<span class="cite">biz_22_fin_2025-01</span> <span class="cite">biz_22_fin_2025-02</span> <span class="cite">biz_22_fin_2025-03</span>). D&amp;A of $2,913.33 (<span class="cite">biz_22_dep0001</span> <span class="cite">biz_22_dep0002</span> <span class="cite">biz_22_dep0003</span>). Total accrual revenue of $102,900.81 (<span class="cite">biz_22_t00003</span> <span class="cite">biz_22_t00007</span> <span class="cite">biz_22_t00011</span>), with total cash revenue of $102,900.81 (<span class="cite">biz_22_t00003</span> <span class="cite">biz_22_t00007</span> <span class="cite">biz_22_t00011</span>).</div>
+      <div class="validated-footer"><span class="validated-badge">✓ validated</span> — every margin, ratio and dollar figure above traces to a real row in monthly_financials.csv or transactions.csv; zero uncited numbers.</div>
+    </div>
+  </div>
+
+  <div class="panel panel-pricing">
+    <div class="persona-line">Audience: relationship manager / pricing desk. Question: "what should we charge this account, and why?"</div>
+
+    <input type="radio" name="pricingbiz" id="pb-11" checked>
+    <input type="radio" name="pricingbiz" id="pb-03">
+    <input type="radio" name="pricingbiz" id="pb-13">
+    <div class="biz-picker">
+      <label for="pb-11">biz_11</label>
+      <label for="pb-03">biz_03</label>
+      <label for="pb-13">biz_13</label>
+    </div>
+
+    <div class="biz-card p11">
+      <div class="biz-name">Hollow Creek Inc. <span>(Construction Trades)</span></div>
+      <div class="biz-id">biz_11 &middot; deepest overdraft in portfolio</div>
+      <div class="tier-badge tier-c">Tier C — Elevated pricing + deposit covenant required</div>
+      <div class="flags-line">2 risk flags triggered: cash_negative, overdraft_risk</div>
+      <div class="narrative-box">Hollow Creek Inc. has 0 months of cash runway cash_negative (<span class="cite">biz_11_t00001</span> <span class="cite">biz_11_t00002</span> <span class="cite">biz_11_t00003</span>), with lowest cash balance of $-126329.03 overdraft_risk (<span class="cite">biz_11_t00001</span> <span class="cite">biz_11_t00002</span> <span class="cite">biz_11_t00003</span>). 22.6% of revenue from cust_biz_11_4 (<span class="cite">biz_11_t00022</span> <span class="cite">biz_11_t00043</span> <span class="cite">biz_11_t00086</span>). Recommended: Tier C — Elevated pricing + deposit covenant required — 2 risk flag(s) triggered this decision (<span class="cite">biz_11_t00001</span> <span class="cite">biz_11_t00002</span> <span class="cite">biz_11_t00003</span>).</div>
+      <div class="validated-footer"><span class="validated-badge">✓ validated</span> — the tier decision cites only the flags that actually fired (171 source rows), never padded with facts that didn't drive it. Deterministic threshold rule, zero model involvement in the decision itself.</div>
+    </div>
+
+    <div class="biz-card p03">
+      <div class="biz-name">Blue Harbor Inc. <span>(Specialty Clinic)</span></div>
+      <div class="biz-id">biz_03 &middot; concentration + bad debt, not a cash problem</div>
+      <div class="tier-badge tier-c">Tier C — Elevated pricing + deposit covenant required</div>
+      <div class="flags-line">2 risk flags triggered: elevated_concentration, elevated_bad_debt</div>
+      <div class="narrative-box">with lowest cash balance of $2717.35 (<span class="cite">biz_03_t00001</span> <span class="cite">biz_03_t00002</span> <span class="cite">biz_03_t00003</span>). 38.7% of revenue from cust_biz_03_1 elevated_concentration (<span class="cite">biz_03_t00032</span> <span class="cite">biz_03_t00043</span> <span class="cite">biz_03_t00054</span>). Recommended: Tier C — Elevated pricing + deposit covenant required — 2 risk flag(s) triggered this decision (<span class="cite">biz_03_t00032</span> <span class="cite">biz_03_t00043</span> <span class="cite">biz_03_t00054</span>).</div>
+      <div class="validated-footer"><span class="validated-badge">✓ validated</span> — same Tier C outcome as biz_11, but driven by a completely different pair of flags: this account isn't a cash-runway problem, it's concentration + collections risk. The citations prove which.</div>
+    </div>
+
+    <div class="biz-card p13">
+      <div class="biz-name">Maple &amp; Co. Partners <span>(Auto Repair)</span></div>
+      <div class="biz-id">biz_13 &middot; clean account</div>
+      <div class="tier-badge tier-a">Tier A — Standard pricing, no additional terms</div>
+      <div class="flags-line">0 risk flags triggered: none</div>
+      <div class="narrative-box">with lowest cash balance of $3677.10 (<span class="cite">biz_13_t00001</span> <span class="cite">biz_13_t00002</span> <span class="cite">biz_13_t00003</span>). 21.3% of revenue from cust_biz_13_3 (<span class="cite">biz_13_t00014</span> <span class="cite">biz_13_t00022</span> <span class="cite">biz_13_t00025</span>).</div>
+      <div class="validated-footer"><span class="validated-badge">✓ validated</span> — zero flags, zero tier citation: the system doesn't fabricate a justification when there's nothing to justify. Standard pricing, no covenant.</div>
+    </div>
+  </div>
+
+  <div class="how-it-works">
+    <div class="how-it-works-title">How it works</div>
+    <div class="stepline"><div class="stepnum">1</div><div><b>Skills compute.</b> Deterministic Python (cash_kpis.py, accrual_kpis.py, anomaly_detection.py, reconciliation.py) reads raw CSVs and returns a KPI value plus the exact source row IDs it came from. No LLM ever touches a raw row.</div></div>
+    <div class="stepline"><div class="stepnum">2</div><div><b>Facts, not rows, go to the model.</b> narrate.py enforces a contract in code: any fact with a value must carry a non-empty list of source IDs, or it's rejected before reaching the model.</div></div>
+    <div class="stepline"><div class="stepnum">3</div><div><b>Model narrates, code checks the narration.</b> After the model writes the paragraph, validate_narrative() re-extracts every number and citation from the text and confirms it traces to an input fact. Anything unsupported is flagged, not hidden.</div></div>
+    <div class="stepline"><div class="stepnum">4</div><div><b>Verified across the whole portfolio.</b> 25 synthetic businesses × three rooms (75 runs) produce zero uncited numbers and zero unresolved citations.</div></div>
+  </div>
+</div>
+</body>
+</html>

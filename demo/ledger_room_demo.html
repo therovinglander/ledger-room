@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Ledger Room — live demo</title>
+<style>
+  :root {
+    --bg: #0f1115; --card: #171a21; --card2: #1d212b; --fg: #eef0f3;
+    --muted: #8b93a3; --border: #2b303b; --accent: #3d7bf0; --accent2: #27c08a;
+    --warn: #e5a53d;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    margin: 0; padding: 0; background: var(--bg); color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px; -webkit-text-size-adjust: 100%;
+  }
+  .wrap { padding: 16px 14px 32px 14px; max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; margin: 0 0 3px 0; font-weight: 800; letter-spacing: -0.01em; }
+  .subtitle { color: var(--muted); font-size: 0.86rem; margin-bottom: 12px; line-height: 1.4; }
+  .synthetic-note {
+    font-size: 0.78rem; color: var(--warn); border: 1px solid #4a3a1f; border-radius: 8px;
+    padding: 8px 12px; margin-bottom: 16px; background: #1f1708; line-height: 1.4;
+  }
+  .lens-tabs { display: flex; gap: 6px; margin-bottom: 0; }
+  .lens-tab {
+    flex: 1; cursor: pointer; padding: 10px 8px; border-radius: 10px 10px 0 0;
+    border: 1px solid var(--border); border-bottom: none;
+    background: var(--card); color: var(--muted);
+    font-size: 0.82rem; font-weight: 700; text-align: center; line-height: 1.3;
+  }
+  .lens-tab small { display: block; font-weight: 500; opacity: 0.75; font-size: 0.7rem; margin-top: 1px; }
+  .lens-tab.active { color: #fff; background: var(--card2); border-color: var(--accent); }
+  .panel {
+    border: 1px solid var(--border); border-radius: 0 0 12px 12px;
+    background: var(--card2); padding: 16px 14px; margin-bottom: 18px;
+  }
+  .panel[hidden] { display: none; }
+  .persona-line { font-size: 0.82rem; color: var(--muted); margin-bottom: 12px; line-height: 1.4; }
+  .biz-picker { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
+  .biz-btn {
+    cursor: pointer; font-size: 0.8rem; padding: 7px 13px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--card); color: var(--fg); font-weight: 600;
+  }
+  .biz-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .biz-name { font-weight: 800; font-size: 1.1rem; margin: 0 0 2px 0; }
+  .biz-id { font-size: 0.78rem; color: var(--muted); margin-bottom: 12px; }
+  .kpi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  @media (max-width: 420px) { .kpi-grid { grid-template-columns: 1fr; } }
+  .kpi-card {
+    border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px;
+    background: var(--card);
+  }
+  .kpi-label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; }
+  .kpi-value { font-size: 1.15rem; font-weight: 800; margin: 3px 0 2px 0; color: #fff; }
+  .kpi-flag { font-size: 0.72rem; color: var(--warn); font-weight: 600; }
+  .narrative-box {
+    border-left: 3px solid var(--accent); padding: 10px 13px; font-size: 0.9rem;
+    line-height: 1.6; margin-bottom: 12px; background: var(--card); border-radius: 0 8px 8px 0;
+  }
+  .cite {
+    font-family: "SF Mono", Menlo, monospace; font-size: 0.68rem; background: var(--bg);
+    color: var(--accent2); padding: 2px 6px; border-radius: 5px; margin: 1px 2px;
+    border: 1px solid var(--border); display: inline-block; white-space: nowrap;
+  }
+  .integrity-line { font-size: 0.82rem; margin-bottom: 12px; font-weight: 600; }
+  .integrity-pass { color: var(--accent2); font-weight: 800; }
+  .validated-footer {
+    font-size: 0.76rem; color: var(--muted); border-top: 1px solid var(--border);
+    padding-top: 10px; margin-top: 6px; line-height: 1.4;
+  }
+  .validated-badge { color: var(--accent2); font-weight: 800; }
+  .how-it-works {
+    font-size: 0.86rem; line-height: 1.6; border: 1px solid var(--border);
+    border-radius: 12px; padding: 14px 15px; background: var(--card2);
+  }
+  .how-it-works-title { font-weight: 800; font-size: 0.95rem; margin-bottom: 10px; }
+  .how-it-works b { color: #fff; }
+  .stepline { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 9px; }
+  .stepnum {
+    flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; background: var(--accent);
+    color: #fff; font-size: 0.72rem; font-weight: 800; display: flex;
+    align-items: center; justify-content: center; margin-top: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Ledger Room</h1>
+  <div class="subtitle">Code computes and cites. The model only narrates facts it's handed — never raw rows, never a guessed number.</div>
+  <div class="synthetic-note">⚠ All data below is synthetic (25 generated SMBs, 12mo 2025). No real financial data. Career-portfolio artifact.</div>
+
+  <div class="lens-tabs">
+    <div class="lens-tab active" data-lens="cash">Cash Flow Room<small>SMB risk brief</small></div>
+    <div class="lens-tab" data-lens="filing">Filing Extraction Room<small>KPI extraction</small></div>
+  </div>
+
+  <div class="panel" id="panel-cash">
+    <div class="persona-line">Audience: non-technical SMB underwriter. Question: "is this business running out of cash, and why?"</div>
+    <div class="biz-picker" id="picker-cash"></div>
+    <div id="content-cash"></div>
+  </div>
+
+  <div class="panel" id="panel-filing" hidden>
+    <div class="persona-line">Audience: financial analyst. Question: "what did you extract, and can I trust it?"</div>
+    <div class="biz-picker" id="picker-filing"></div>
+    <div id="content-filing"></div>
+  </div>
+
+  <div class="how-it-works">
+    <div class="how-it-works-title">How it works</div>
+    <div class="stepline"><div class="stepnum">1</div><div><b>Skills compute.</b> Deterministic Python (cash_kpis.py, accrual_kpis.py, anomaly_detection.py, reconciliation.py) reads raw CSVs and returns a KPI value plus the exact source row IDs it came from. No LLM ever touches a raw row.</div></div>
+    <div class="stepline"><div class="stepnum">2</div><div><b>Facts, not rows, go to the model.</b> narrate.py enforces a contract in code: any fact with a value must carry a non-empty list of source IDs, or it's rejected before reaching the model.</div></div>
+    <div class="stepline"><div class="stepnum">3</div><div><b>Model narrates, code checks the narration.</b> After the model writes the paragraph, validate_narrative() re-extracts every number and citation from the text and confirms it traces to an input fact. Anything unsupported is flagged, not hidden.</div></div>
+    <div class="stepline"><div class="stepnum">4</div><div><b>Verified across the whole portfolio.</b> 25 synthetic businesses × both rooms (50 runs) produce zero uncited numbers and zero unresolved citations.</div></div>
+  </div>
+</div>
+
+<script>
+const DATA = {
+  cash: {
+    biz_07: {
+      name: "Lakeside Partners", industry: "Consulting", flag: "declining revenue",
+      kpis: [
+        {label:"Cash runway", value:"0 mo", sub:"cash_negative"},
+        {label:"Burn rate (trailing)", value:"$12,152.62/mo"},
+        {label:"Lowest balance", value:"-$62,146.81", sub:"overdraft_risk"},
+      ],
+      narrative: "Lakeside Partners has 0 months of cash runway cash_negative (biz_07_t00001, biz_07_t00002, biz_07_t00003), with a trailing burn rate of $12152.62/month (biz_07_t00094, biz_07_t00095, biz_07_t00096), with lowest cash balance of $-62146.81 overdraft_risk (biz_07_t00001, biz_07_t00002, biz_07_t00003)."
+    },
+    biz_22: {
+      name: "Elm Street LLC", industry: "Fitness Studio", flag: "round-number anomaly",
+      kpis: [
+        {label:"Cash runway", value:"0 mo", sub:"cash_negative"},
+        {label:"Burn rate (trailing)", value:"$13,967.69/mo"},
+        {label:"Lowest balance", value:"-$140,888.61", sub:"overdraft_risk"},
+        {label:"Round-number txns", value:"13", sub:"round_number_cluster"},
+      ],
+      narrative: "Elm Street LLC has 0 months of cash runway cash_negative (biz_22_t00001, biz_22_t00002, biz_22_t00003), with a trailing burn rate of $13967.69/month (biz_22_t00111, biz_22_t00112, biz_22_t00113), with lowest cash balance of $-140888.61 overdraft_risk (biz_22_t00001, biz_22_t00002, biz_22_t00003). 13 suspicious round-number transactions round_number_cluster (biz_22_t00006, biz_22_t00010, biz_22_t00017), with Benford anomaly score 0.3880 (biz_22_t00001, biz_22_t00002, biz_22_t00003)."
+    },
+    biz_03: {
+      name: "Blue Harbor Inc.", industry: "Specialty Clinic", flag: "customer concentration",
+      kpis: [
+        {label:"Burn rate (trailing)", value:"$4,138.50/mo"},
+        {label:"Lowest balance", value:"$2,717.35"},
+        {label:"Benford anomaly score", value:"0.8502"},
+      ],
+      narrative: "with a trailing burn rate of $4138.50/month (biz_03_t00091, biz_03_t00092, biz_03_t00093), with lowest cash balance of $2717.35 (biz_03_t00001, biz_03_t00002, biz_03_t00003), with Benford anomaly score 0.8502 (biz_03_t00001, biz_03_t00002, biz_03_t00003)."
+    }
+  },
+  filing: {
+    biz_03: {
+      name: "Blue Harbor Inc.", industry: "Specialty Clinic", flag: "elevated bad debt",
+      integrity: "Net Income Integrity: verified (0/300 rows flagged)",
+      kpis: [
+        {label:"Net margin (TTM)", value:"-35.05%"},
+        {label:"Operating margin (TTM)", value:"-30.55%"},
+        {label:"Gross margin (TTM)", value:"63.80%"},
+        {label:"Bad debt rate (effective)", value:"4.50%", sub:"elevated_bad_debt"},
+        {label:"Allowance / AR ratio", value:"6.75%"},
+        {label:"Accrual revenue (12mo)", value:"$256,849.29"},
+        {label:"Cash revenue (12mo)", value:"$279,150.62", sub:"gap vs accrual: recognition lag"},
+      ],
+      narrative: "Net margin (TTM) of -35.05% (biz_03_t00013, biz_03_t00015, biz_03_t00019). Operating margin (TTM) of -30.55% (biz_03_t00013, biz_03_t00015, biz_03_t00019). Gross margin (TTM) of 63.80% (biz_03_t00013, biz_03_t00015, biz_03_t00019). Allowance for doubtful accounts at 6.75% of AR (biz_03_fin_2025-01, biz_03_fin_2025-02, biz_03_fin_2025-03). Total accrual revenue of $256,849.29 (biz_03_t00003, biz_03_t00005, biz_03_t00007), with total cash revenue of $279,150.62 (biz_03_t00003, biz_03_t00005, biz_03_t00007)."
+    },
+    biz_07: {
+      name: "Lakeside Partners", industry: "Consulting", flag: "declining revenue",
+      integrity: "Net Income Integrity: verified (0/300 rows flagged)",
+      kpis: [
+        {label:"Net margin (TTM)", value:"-66.33%"},
+        {label:"Operating margin (TTM)", value:"-64.71%"},
+        {label:"Gross margin (TTM)", value:"53.90%"},
+        {label:"Bad debt rate (effective)", value:"1.20%"},
+        {label:"Allowance / AR ratio", value:"1.80%"},
+        {label:"D&A total (9mo)", value:"$1,152.63"},
+        {label:"Accrual revenue (12mo)", value:"$274,154.28"},
+        {label:"Cash revenue (12mo)", value:"$274,154.28", sub:"no recognition lag this period"},
+      ],
+      narrative: "Net margin (TTM) of -66.33% (biz_07_t00005, biz_07_t00007, biz_07_t00011). Operating margin (TTM) of -64.71% (biz_07_t00005, biz_07_t00007, biz_07_t00011). Gross margin (TTM) of 53.90% (biz_07_t00005, biz_07_t00007, biz_07_t00011). Allowance for doubtful accounts at 1.80% of AR (biz_07_fin_2025-01, biz_07_fin_2025-02, biz_07_fin_2025-03). D&A of $1,152.63 (biz_07_dep0001, biz_07_dep0002, biz_07_dep0003). Total accrual revenue of $274,154.28 (biz_07_t00005, biz_07_t00007, biz_07_t00011), with total cash revenue of $274,154.28 (biz_07_t00005, biz_07_t00007, biz_07_t00011)."
+    },
+    biz_22: {
+      name: "Elm Street LLC", industry: "Fitness Studio", flag: "margin < -100%",
+      integrity: "Net Income Integrity: verified (0/300 rows flagged)",
+      kpis: [
+        {label:"Net margin (TTM)", value:"-158.18%", sub:"net loss exceeds revenue"},
+        {label:"Operating margin (TTM)", value:"-151.35%"},
+        {label:"Gross margin (TTM)", value:"54.40%"},
+        {label:"Bad debt rate (effective)", value:"4.00%", sub:"elevated_bad_debt"},
+        {label:"Allowance / AR ratio", value:"6.00%"},
+        {label:"D&A total (9mo)", value:"$2,913.33"},
+        {label:"Accrual revenue (12mo)", value:"$102,900.81"},
+        {label:"Cash revenue (12mo)", value:"$102,900.81"},
+      ],
+      narrative: "Net margin (TTM) of -158.18% (biz_22_t00003, biz_22_t00007, biz_22_t00011). Operating margin (TTM) of -151.35% (biz_22_t00003, biz_22_t00007, biz_22_t00011). Gross margin (TTM) of 54.40% (biz_22_t00003, biz_22_t00007, biz_22_t00011). Allowance for doubtful accounts at 6.00% of AR (biz_22_fin_2025-01, biz_22_fin_2025-02, biz_22_fin_2025-03). D&A of $2,913.33 (biz_22_dep0001, biz_22_dep0002, biz_22_dep0003). Total accrual revenue of $102,900.81 (biz_22_t00003, biz_22_t00007, biz_22_t00011), with total cash revenue of $102,900.81 (biz_22_t00003, biz_22_t00007, biz_22_t00011)."
+    }
+  }
+};
+
+function citeify(text) {
+  return text.replace(/\(([^)]*biz_\d+[^)]*)\)/g, (m, inner) => {
+    const chips = inner.split(/,\s*/).map(t => `<span class="cite">${t}</span>`).join(" ");
+    return `(${chips})`;
+  });
+}
+
+function renderCash(bizId) {
+  const d = DATA.cash[bizId];
+  const kpiHtml = d.kpis.map(k => `
+    <div class="kpi-card">
+      <div class="kpi-label">${k.label}</div>
+      <div class="kpi-value">${k.value}</div>
+      ${k.sub ? `<div class="kpi-flag">${k.sub}</div>` : ""}
+    </div>`).join("");
+  document.getElementById("content-cash").innerHTML = `
+    <div class="biz-name">${d.name} <span style="font-weight:400;color:var(--muted)">(${d.industry})</span></div>
+    <div class="biz-id">${bizId} &middot; flag: ${d.flag}</div>
+    <div class="kpi-grid">${kpiHtml}</div>
+    <div class="narrative-box">${citeify(d.narrative)}</div>
+    <div class="validated-footer"><span class="validated-badge">✓ validated</span> — every number above traces to a source_transaction_id; validate_narrative() found zero uncited numbers, zero unknown citations.</div>
+  `;
+}
+
+function renderFiling(bizId) {
+  const d = DATA.filing[bizId];
+  const kpiHtml = d.kpis.map(k => `
+    <div class="kpi-card">
+      <div class="kpi-label">${k.label}</div>
+      <div class="kpi-value">${k.value}</div>
+      ${k.sub ? `<div class="kpi-flag">${k.sub}</div>` : ""}
+    </div>`).join("");
+  document.getElementById("content-filing").innerHTML = `
+    <div class="biz-name">${d.name} <span style="font-weight:400;color:var(--muted)">(${d.industry})</span></div>
+    <div class="biz-id">${bizId} &middot; flag: ${d.flag}</div>
+    <div class="integrity-line"><span class="integrity-pass">✓</span> ${d.integrity}</div>
+    <div class="kpi-grid">${kpiHtml}</div>
+    <div class="narrative-box">${citeify(d.narrative)}</div>
+    <div class="validated-footer"><span class="validated-badge">✓ validated</span> — every margin, ratio and dollar figure above traces to a real row in monthly_financials.csv or transactions.csv; zero uncited numbers.</div>
+  `;
+}
+
+function buildPicker(containerId, lens, renderFn, defaultBiz) {
+  const el = document.getElementById(containerId);
+  const ids = Object.keys(DATA[lens]);
+  el.innerHTML = ids.map(id => `<div class="biz-btn${id===defaultBiz?' active':''}" data-biz="${id}">${id}</div>`).join("");
+  el.querySelectorAll(".biz-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      el.querySelectorAll(".biz-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      renderFn(btn.dataset.biz);
+    });
+  });
+  renderFn(defaultBiz);
+}
+
+buildPicker("picker-cash", "cash", renderCash, "biz_07");
+buildPicker("picker-filing", "filing", renderFiling, "biz_03");
+
+document.querySelectorAll(".lens-tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".lens-tab").forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+    const lens = tab.dataset.lens;
+    document.getElementById("panel-cash").hidden = lens !== "cash";
+    document.getElementById("panel-filing").hidden = lens !== "filing";
+  });
+});
+</script>
+</body>
+</html>
